@@ -1,0 +1,42 @@
+{
+    "beanless_chili": {
+        "name": "Beanless Chili",
+        "tags": [
+            "mexican",
+            "american",
+            "beef",
+            "dairy free",
+            "adjustable spice level",
+            "over an hour"
+        ]
+    },
+    "easy_fritters": {
+        "name": "Easy Fritters",
+        "tags": [
+            "sweets",
+            "low ingredient",
+            "quick"
+        ]
+    },
+    "key_lime_tarts": {
+        "name": "Key Lime Tarts",
+        "tags": [
+            "sweets",
+            "over an hour"
+        ]
+    },
+    "straw-pom_smoothie": {
+        "name": "Straw-Pom Smoothie",
+        "tags": [
+            "smoothie"
+        ]
+    },
+    "pollo_con_arroz": {
+        "name": "Pollo Con Arroz",
+        "tags": [
+            "spanish",
+            "chicken",
+            "rice"
+        ]
+    }
+}

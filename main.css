@@ -1,0 +1,49 @@
+body{
+    margin-top:20px;
+    margin-left:20px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+}
+
+button {
+    font-size: 20px;
+}
+
+h2 {
+    padding-top: 5px;
+    margin-bottom: -10px
+}
+
+.centered {
+    display: table;
+    margin: 0 auto;
+    margin-top:20px;
+}
+
+.button {
+    font-size:22px;
+    padding: 2px 8px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
+
+.big-link {
+    font-size:27px;
+}
+
+.big-p {
+    font-size:18px;
+    margin-left: 20px;
+}
+
+.tags {
+    color:#616161;
+    font-size:18px;
+    text-decoration: none;
+    padding: 4px;
+}
