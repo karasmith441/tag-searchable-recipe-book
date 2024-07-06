@@ -4,6 +4,9 @@ Straw-Pom Smoothie
 <tags>
 smoothie
 
+<itags>
+pomegranate
+
 <batch>
 makes 1 smoothie
 takes 15 minutes
@@ -12,11 +15,11 @@ takes 15 minutes
 Blender
 
 <ingredients>
-Frozen Strawberries: 2 Handfuls
-Honey Vanilla Greek Yogurt: 2 Heaping Spoonfuls
-Protein Powder: 1/2 Cup
-Kale Leaves (Stems Removed): 3
-Pomegranate Juice: 1-2 Cups
+2 Handfuls Frozen {alias:Strawberries/strawberry}
+2 Heaping Spoonfuls Honey Vanilla {tag:Greek Yogurt}
+1/2 Cup {tag:Protein Powder}
+3 {tag:Kale} Leaves (Stems Removed)
+1-2 Cups {tag:Pomegranate Juice}
 
 <instructions>
 Add non-liquids into blender along with ~1 cup of Pomegranate Juice.

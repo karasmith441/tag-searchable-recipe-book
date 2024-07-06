@@ -2,41 +2,149 @@
     "beanless_chili": {
         "name": "Beanless Chili",
         "tags": [
-            "mexican",
+            "ground beef",
+            "adobo",
             "american",
-            "beef",
-            "dairy free",
+            "cumin",
+            "cloves",
             "adjustable spice level",
-            "over an hour"
+            "tomato sauce",
+            "paprika",
+            "cinnamon",
+            "nutmeg",
+            "carrot",
+            "garlic",
+            "beef",
+            "over an hour",
+            "oregano",
+            "chipotle",
+            "tomato",
+            "mexican",
+            "poblano",
+            "onion",
+            "dairy free",
+            "thyme"
+        ]
+    },
+    "chickpea_shakshuka": {
+        "name": "Chickpea Shakshuka",
+        "tags": [
+            "paprika",
+            "bell pepper",
+            "cinnamon",
+            "middle eastern",
+            "one pot",
+            "fennel",
+            "cayenne",
+            "tomato",
+            "vegetarian",
+            "onion",
+            "red bell pepper",
+            "cumin",
+            "chickpeas",
+            "sugar",
+            "garlic",
+            "north african",
+            "adjustable spice level"
+        ]
+    },
+    "chipotle_adobo_shredded_chicken": {
+        "name": "Chipotle & Adobo Shredded Chicken",
+        "tags": [
+            "over an hour",
+            "chipotle",
+            "mexican",
+            "one pot",
+            "adobo",
+            "garlic",
+            "tomato sauce",
+            "tomato",
+            "cumin",
+            "chicken breast"
         ]
     },
     "easy_fritters": {
         "name": "Easy Fritters",
         "tags": [
-            "sweets",
             "low ingredient",
-            "quick"
+            "sweets",
+            "greek yogurt",
+            "baking powder",
+            "quick",
+            "flour"
+        ]
+    },
+    "kashmiri_paneer_curry": {
+        "name": "Kashmiri Paneer Curry",
+        "tags": [
+            "cloves",
+            "cumin",
+            "green cardamom",
+            "kashmiri chili",
+            "bay leaves",
+            "paneer",
+            "fennel",
+            "garlic",
+            "turmeric",
+            "one pot",
+            "asafoetida powder",
+            "cardamom",
+            "cornstarch",
+            "milk",
+            "zucchini",
+            "ginger",
+            "vegetarian",
+            "indian",
+            "yellow curry powder",
+            "black cardamom"
         ]
     },
     "key_lime_tarts": {
         "name": "Key Lime Tarts",
         "tags": [
+            "lime juice",
+            "butter",
+            "biscoff cookies",
             "sweets",
+            "greek yogurt",
+            "sweetened condensed milk",
+            "brown sugar",
+            "lime",
             "over an hour"
-        ]
-    },
-    "straw-pom_smoothie": {
-        "name": "Straw-Pom Smoothie",
-        "tags": [
-            "smoothie"
         ]
     },
     "pollo_con_arroz": {
         "name": "Pollo Con Arroz",
         "tags": [
+            "parsley",
+            "paprika",
+            "chili powder",
+            "turmeric",
+            "rice",
+            "tomato",
+            "cayenne",
+            "feta",
+            "ginger",
             "spanish",
+            "onion",
+            "cumin",
+            "tomato paste",
+            "garlic",
             "chicken",
-            "rice"
+            "saffron",
+            "lime"
+        ]
+    },
+    "straw-pom_smoothie": {
+        "name": "Straw-Pom Smoothie",
+        "tags": [
+            "pomegranate",
+            "kale",
+            "pomegranate juice",
+            "greek yogurt",
+            "protein powder",
+            "strawberry",
+            "smoothie"
         ]
     }
 }

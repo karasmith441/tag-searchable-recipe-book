@@ -38,7 +38,8 @@ def main():
 			recipe_dict = parse_rp(ID)
 			if verbose:
 				print(f"{recipe_dict['title']}")
-			rpbase[ID] = {'name': recipe_dict['title'], 'tags': recipe_dict['tags']}
+			rpbase[ID] = {'name': recipe_dict['title'], 'tags': list(set(recipe_dict['tags'] + recipe_dict.get('itags', []) + recipe_dict.get('ingredient_tags',[])))}
+			#print(rpbase[ID])
 
 			#writeJSON(recipe_dict)
 			writeHTML(recipe_dict)
@@ -86,7 +87,7 @@ def sys_args():
 	return forceall, verbose, rflag
 
 def parse_rp(ID):
-	
+
 	file = open(f"recipes/{ID}.rp")
 	raw = file.read()
 
@@ -118,6 +119,9 @@ def parse_rp(ID):
 
 		elif title == 'tags':
 			recipe_dict['tags'] = [t.strip().lower() for t in body.split("\n") if t.strip() != ""]
+
+		elif title == 'itags':
+			recipe_dict['itags'] = [t.strip().lower() for t in body.split("\n") if t.strip() != ""]
  
 		else:
 			if title not in recipe_dict:
@@ -127,55 +131,33 @@ def parse_rp(ID):
 				print("[SYNTAX ERROR] Multiple ingredient blocks with the same name.")
 				exit(1)
 
-
 			if title == 'ingredients':
 				recipe_dict[title][subtitle] = []
 				for l in body.split("\n"):
 					line = l.strip()
 					if line != "":
+
+						recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"{tag:([^}]*)}", line)]
+						recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"{alias:[^/]*/([^}]*)}", line)]
+
 						tagged = line.split("*")
-						items = tagged[0].split(":")
-						ing = items[0].strip()
+						item = tagged[0].strip()
+
 						if len(tagged) > 1:
 							tag = tagged[1].strip()
-						else:
-							tag = ing
+							ingredient_reference[tag] = item
 
-						if len(items) == 1:
-							ingredient_reference[tag] = ing
-							recipe_dict[title][subtitle].append([ing, ""])
-
-						elif len(items) == 2:
-							quant = items[1].strip()
-							if tag[0] != "^":
-								ingredient_reference[tag] = quant + " of " + ing
-							else:
-								ingredient_reference[tag[1:]] = quant + " " + ing
-							recipe_dict[title][subtitle].append([ing, quant])
-						else:
-							print("[SYNTAX ERROR] Ingredient has either multiple names or multiple quantities. Check for extra \":\"\'s")
-
+						recipe_dict[title][subtitle].append(item)
 
 			elif title == 'instructions':
 				recipe_dict[title][subtitle] = []
-				for line in body.split("\n"):
-					out = ""
-					tag = ""
-					esc_flag = False
-					for c in line.strip():
-						if c == "{":
-							esc_flag = True
-						elif c == "}":
-							esc_flag = False
-							out += ingredient_reference[tag]
-							tag = ""
-						else:
-							if esc_flag:
-								tag += c
-							else:
-								out += c
+				for l in body.split("\n"):
+					line = l.strip()
+					shorts = re.findall(r"\*([A-Za-z_]*)", line)
+					for s in shorts:
+						line = line.replace(f"*{s}", ingredient_reference[s])
 
-					recipe_dict[title][subtitle].append(out)
+					recipe_dict[title][subtitle].append(line)
 			else:
 				recipe_dict[title][subtitle] = body.split("\n")
 
@@ -200,6 +182,11 @@ def writeHTML(recipe_dict):
 	file = open(f"pages/{ID}.html", "w+")
 	file.write(HTML)
 	file.close()
+
+def tagLinkBuilder(m):
+	return f'<a href="../index.html?tag={m.group(1).lower()}" style="color: #2c87f0; text-decoration: none">{m.group(1)}</a>'
+def aliasLinkBuilder(m):
+	return f'<a href="../index.html?tag={m.group(2).lower()}" style="color: #2c87f0; text-decoration: none">{m.group(1)}</a>'
 
 def htmlBuilder(recipe_dict):
 	
@@ -248,10 +235,9 @@ def htmlBuilder(recipe_dict):
 				ingredients.append(f"<h3>{subtitle}</h3>")
 			ingredients.append("<ul>")
 			for i in recipe_dict['ingredients'][subtitle]:
-				if i[1] != "":
-					ingredients.append(f"<li>{i[1]} {i[0]}</li>")
-				else:
-					ingredients.append(f"<li>{i[0]}</li>")
+				i = re.sub(r"{tag:([^}]*)}", tagLinkBuilder, i)
+				i = re.sub(r"{alias:([^/]*)/([^}]*)}", aliasLinkBuilder, i)
+				ingredients.append(f"<li>{i}</li>")
 			ingredients.append("</ul>")
 		html += ingredients
 	
@@ -261,8 +247,10 @@ def htmlBuilder(recipe_dict):
 			if subtitle != 'default':
 				instructions.append(f"<h3>{subtitle}</h3>")
 			instructions += ["<ol>"]
-			for t in recipe_dict['instructions'][subtitle]:
-				instructions.append(f"<li>{t}</li>")
+			for l in recipe_dict['instructions'][subtitle]:
+				l = re.sub(r"{tag:([^}]*)}", r"\1", l)
+				l = re.sub(r"{alias:([^/]*)/([^}]*)}", r"\1", l)
+				instructions.append(f"<li>{l}</li>")
 			instructions.append("</ol>")
 		html += instructions
 
@@ -272,7 +260,9 @@ def htmlBuilder(recipe_dict):
 			if subtitle != 'default':
 				notes += [f"<h3>{subtitle}</h3>"]
 			notes.append("<p>")
-			notes += [l + "<br>" for l in recipe_dict['notes'][subtitle]]
+			for l in recipe_dict['notes'][subtitle]:
+				l = re.sub(r"{link:(.*)}", r'<a href="\1">\1</a>', l)
+				notes.append(l + "<br>")
 			notes.append("</p>")
 		html += notes
 	
