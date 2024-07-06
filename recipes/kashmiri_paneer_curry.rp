@@ -33,9 +33,9 @@ Some oil (for the pan)
 1 tbsp Ground {tag:Ginger} *ginger
 1 tbsp Ground {tag:Turmeric} *turmeric
 1 tbsp {tag:Yellow Curry Powder} *curry
-2 tsp {tag:Garlic} powder *garlic
+2 tsp {alias:Garlic Powder/garlic} *garlic
 1/4 tsp {tag:Asafoetida powder} *asa
-A dash of {tag:Kashmiri Chili} Powder *kashmiri
+A dash of {alias:Kashmiri Chili Powder/kashmiri chili} *kashmiri
 
 <ingredients Serving>
 Rice or Naan

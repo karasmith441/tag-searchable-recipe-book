@@ -8,18 +8,18 @@ recipe_files = glob.glob("recipes/*.rp")
 
 def main():
 
-	forceall, verbose, rflag = sys_args()
+	forceall, rflag = sys_args()
 
 	try:
 		with open("rpbase.json", "r+") as rpbase_file:
 			rpbase = json.load(rpbase_file)
 	except (FileNotFoundError, json.decoder.JSONDecodeError):
 		rpbase = {}
-
+	
 	if not rflag:
 		flagged_ids = []
 		for ID in rpbase:
-			if f"recipes/{ID}.rp" not in recipe_files:
+			if f"recipes\\{ID}.rp" not in recipe_files:
 				try:
 					os.remove(f"recipe_data/{ID}.json")
 				except:
@@ -34,33 +34,33 @@ def main():
 
 	for path in recipe_files:
 		ID = path[-path[::-1].find('\\'):-(path[::-1].find(".")+1)]
-		if (ID not in rpbase) or forceall:
-			recipe_dict = parse_rp(ID)
-			if verbose:
+		with open(f"recipes/{ID}.rp") as file:
+			text = file.read()
+			if forceall or (ID not in rpbase) or rpbase[ID]['text'] != text:
+				recipe_dict = parse_rp(ID, text)
 				print(f"{recipe_dict['title']}")
-			rpbase[ID] = {'name': recipe_dict['title'], 'tags': list(set(recipe_dict['tags'] + recipe_dict.get('itags', []) + recipe_dict.get('ingredient_tags',[])))}
-			#print(rpbase[ID])
+				rpbase[ID] = {'name': recipe_dict['title'], 'text': text, 'tags': list(set(recipe_dict['tags'] + recipe_dict.get('itags', []) + recipe_dict.get('ingredient_tags',[])))}
 
-			#writeJSON(recipe_dict)
-			writeHTML(recipe_dict)
+				#writeJSON(recipe_dict)
+				writeHTML(recipe_dict)
 
-
-
-		#TODO: Clean any JSON or HTML files that don't have .rp entries.
+	rpbase_sorted = {}
+	for ID, data in sorted(rpbase.items(), key=lambda x: x[1]['name']):
+		rpbase_sorted[ID] = data
 
 	with open("rpbase.json", "w") as rpbase_file:
-		json.dump(rpbase, rpbase_file, indent=4)
+		json.dump(rpbase_sorted, rpbase_file, indent=4)
 	
 def sys_args():
 
 	global recipe_files
 
 	forceall = False
-	verbose = False
 	rflag = False
+	#verbose = False
 
-	if "-v" in sys.argv or "--verbose" in sys.argv:
-		verbose = True
+	# if "-v" in sys.argv or "--verbose" in sys.argv:
+	# 	verbose = True
 
 	if "--force-all" in sys.argv:
 		forceall = True
@@ -84,14 +84,11 @@ def sys_args():
 		except FileNotFoundError:
 			print(f"File {sys.argv[index+1]} does not exist.")
 
-	return forceall, verbose, rflag
+	return forceall, rflag#, verbose
 
-def parse_rp(ID):
+def parse_rp(ID, text):
 
-	file = open(f"recipes/{ID}.rp")
-	raw = file.read()
-
-	sections = re.findall("<(.*)>\n([^<]*)", raw)
+	sections = re.findall("<(.*)>\n([^<]*)", text)
 	
 	recipe_dict = {"id": ID}
 	ingredient_reference = {}
@@ -118,7 +115,7 @@ def parse_rp(ID):
 				recipe_dict['subtitle'] = body[body.find("\n")+1:]
 
 		elif title == 'tags':
-			recipe_dict['tags'] = [t.strip().lower() for t in body.split("\n") if t.strip() != ""]
+			recipe_dict['tags'] = sorted([t.strip().lower() for t in body.split("\n") if t.strip() != ""])
 
 		elif title == 'itags':
 			recipe_dict['itags'] = [t.strip().lower() for t in body.split("\n") if t.strip() != ""]
@@ -160,8 +157,6 @@ def parse_rp(ID):
 					recipe_dict[title][subtitle].append(line)
 			else:
 				recipe_dict[title][subtitle] = body.split("\n")
-
-	file.close()
 
 	return recipe_dict
 
@@ -235,8 +230,8 @@ def htmlBuilder(recipe_dict):
 				ingredients.append(f"<h3>{subtitle}</h3>")
 			ingredients.append("<ul>")
 			for i in recipe_dict['ingredients'][subtitle]:
-				i = re.sub(r"{tag:([^}]*)}", tagLinkBuilder, i)
-				i = re.sub(r"{alias:([^/]*)/([^}]*)}", aliasLinkBuilder, i)
+				i = re.sub(r"{(?:tag|link):([^}]*)}", tagLinkBuilder, i)
+				i = re.sub(r"{(?:alias|tag|link):([^/]*)/([^}]*)}", aliasLinkBuilder, i)
 				ingredients.append(f"<li>{i}</li>")
 			ingredients.append("</ul>")
 		html += ingredients
@@ -248,8 +243,8 @@ def htmlBuilder(recipe_dict):
 				instructions.append(f"<h3>{subtitle}</h3>")
 			instructions += ["<ol>"]
 			for l in recipe_dict['instructions'][subtitle]:
-				l = re.sub(r"{tag:([^}]*)}", r"\1", l)
-				l = re.sub(r"{alias:([^/]*)/([^}]*)}", r"\1", l)
+				l = re.sub(r"{(?:tag|link):([^}]*)}", r"\1", l)
+				l = re.sub(r"{(?:alias|tag|link):([^/]*)/([^}]*)}", r"\1", l)
 				instructions.append(f"<li>{l}</li>")
 			instructions.append("</ol>")
 		html += instructions
