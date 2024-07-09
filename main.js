@@ -4,7 +4,7 @@ if (location.search.length == 0) {
 }
 else
 {
-	inpt.value = decodeURIComponent(location.search.substring(5));
+	inpt.value = decodeURIComponent(location.search.substring(5)).replace(/\+/g, "&");
 }
 
 // function getUrlParams() {
