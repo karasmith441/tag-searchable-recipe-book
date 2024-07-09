@@ -1,25 +1,25 @@
 {
     "spanish_rice_with_chorizo_and_chickpeas": {
         "name": "Baked Spanish Rice with Andouille and Chickpeas",
-        "text": "<title>\nBaked Spanish Rice with Andouille and Chickpeas\n\n<tags>\nspanish\nrice\nsausage\nover an hour\n\n<tools>\nDutch Oven\n\n<ingredients>\n2 Lbs {tag:Andouille}\n6 Cloves of {tag:Garlic}\n1 Medium {tag:Yellow Onion}\n1 Tbsp {tag:Tomato Paste} *paste\n1 Tsp {tag:Paprika} *pap\nA Pinch of {tag:Cinnamon} *cinn\nA Large Pinch {tag:Saffron Threads} *saff\n3 Cup {alias:Chicken/chicken stock} or {alias:Vegetable/vegetable stock} {tag:Stock} *stock\n1/4 Cup Dry {tag:Sherry} *sherry\nOne 15-oz. Can {tag:Chickpeas}\nSalt & Pepper\n1 1/2 Cups {alias:Short Grain Rice/rice} *rice\nFinely Chopped {tag:Chives} (Garnish)\n\n<instructions>\nPreheat oven to 400 F and put the Chickpeas in a colander or strainer to drain.\nSlice the Andouille into 3/4-inch slices and start cooking in a Dutch oven on the stove.\nMeanwhile, char a very roughly chopped Onion and 6 Whole Cloves of Garlic in a dry skillet for a few minutes until browned.\nSqueeze the garlic out of its skin and put it and the charred Garlic in a food processor, then pulse until the minced alliums are about rice sized.\nOnce the Andouille is done, remove it from the Dutch oven and add in the alliums. Cook until jammy.\nAdd *paste and cook for 5 more minutes.\nAdd *sherry, bring to a boil for a few minutes, then add *stock, *pap, *cinn, *saff, Chickpeas (drained), and the Andouille to the Dutch oven.\nSalt to taste, then add *rice and bring back to a boil.\nWhile it is boiling, move the Dutch oven from the stove the oven and bake, uncovered, until the rice is al dente and the liquid is absorbed, 20\u00e2\u20ac\u201c25 minutes.\nRemove from the oven, cover, and let stand until the rice is just tender, about 10 minutes. Garnish with Chives.\n",
+        "text": "<title>\nBaked Spanish Rice with Andouille and Chickpeas\n\n<tags>\nspanish\nrice\nsausage\nover an hour\n\n<tools>\nDutch Oven\nSkillet\nOven\n\n<ingredients>\n2 Lbs {tag:Andouille}\n6 Cloves of {tag:Garlic}\n1 Medium {tag:Yellow Onion}\n1 Tbsp {tag:Tomato Paste} *paste\n1 Tsp {tag:Paprika} *pap\nA Pinch of {tag:Cinnamon} *cinn\nA Large Pinch {tag:Saffron Threads} *saff\n3 Cup {alias:Chicken/chicken stock} or {alias:Vegetable/vegetable stock} {tag:Stock} *stock\n1/4 Cup Dry {tag:Sherry} *sherry\nOne 15-oz. Can {tag:Chickpeas}\nSalt & Pepper\n1 1/2 Cups {alias:Short Grain Rice/rice} *rice\nFinely Chopped {tag:Chives} (Garnish)\n\n<instructions>\nPreheat oven to 400 F and put the Chickpeas in a colander or strainer to drain.\nSlice the Andouille into 3/4-inch slices and start cooking in a Dutch oven on the stove.\nMeanwhile, char a very roughly chopped Onion and 6 Whole Cloves of Garlic in a dry skillet for a few minutes until browned.\nSqueeze the garlic out of its skin and put it and the charred Garlic in a food processor, then pulse until the minced alliums are about rice sized.\nOnce the Andouille is done, remove it from the Dutch oven and add in the alliums. Cook until jammy.\nAdd *paste and cook for 5 more minutes.\nAdd *sherry, bring to a boil for a few minutes, then add *stock, *pap, *cinn, *saff, Chickpeas (drained), and the Andouille to the Dutch oven.\nSalt to taste, then add *rice and bring back to a boil.\nWhile it is boiling, move the Dutch oven from the stove the oven and bake, uncovered, until the rice is al dente and the liquid is absorbed, 20\u00e2\u20ac\u201c25 minutes.\nRemove from the oven, cover, and let stand until the rice is just tender, about 10 minutes. Garnish with Chives.\n",
         "tags": [
-            "vegetable stock",
-            "chicken stock",
-            "cinnamon",
-            "paprika",
-            "over an hour",
-            "saffron threads",
-            "rice",
-            "sausage",
-            "garlic",
             "sherry",
-            "chickpeas",
-            "spanish",
+            "stock",
             "yellow onion",
+            "chickpeas",
+            "andouille",
+            "saffron threads",
+            "sausage",
+            "over an hour",
+            "paprika",
+            "vegetable stock",
+            "spanish",
             "chives",
             "tomato paste",
-            "stock",
-            "andouille"
+            "chicken stock",
+            "cinnamon",
+            "garlic",
+            "rice"
         ]
     },
     "basic_dumplings": {
@@ -144,6 +144,28 @@
             "cumin"
         ]
     },
+    "coconut_curry": {
+        "name": "Coconut Curry",
+        "text": "<title>\nCoconut Curry\n\n<tags>\ncurry\nchicken\n\n<itags>\ncurry powder\ncoconut\n\n<batch>\nMakes 3 Servings (4 Servings with Rice)\nTakes ~40 Minutes\n\n<tools>\nDutch Oven\n\n<ingredents Chicken>\n2 Lbs {tag:Chicken Thighs}\nSome Neutral Oil\n{tag:Paprika}\n{tag:Red Curry Powder}\n{tag:Ground Ginger/ginger}\nSalt & Pepper\n\n<ingredients Curry>\n1 Medium {tag:Onion}\n3 Cloves of {tag:Garlic}\n1 {tag:Zucchini}\n2 {tag:Star Anise Pods/star anise} *star\n1/2 Inch {tag:Ginger} *gin\n2 Tbsp {tag:Yellow Curry Powder} *yellow\n1 Tbsp {tag:Red Curry Powder} *red\n1 Tbsp {tag:Paprika} *pap\n1 Tbsp {tag:Tomato Paste} *tomato\n2 Tsp {tag:Cumin} *cumin\n2 Tsp {tag:Turmeric} *turm\n1 Tsp {tag:White Pepper} *pep\nSalt & Pepper\n\n<instructions>\nMince an Onion and 3 Cloves of Garlic, cut a Zucchini into 1/4 inch slices, and season the Chicken with the chicken spices.\nIn an oiled Dutch Oven over high heat, sear the chicken until almost cooked through, about 10 minutes, flipping as necessary.\nRemove the chicken, reduce the heat to medium, and add the Onion, garlic, and Zucchini to the Dutch oven.\nCook until the Onion just begins to soften, about 7 minutes. Then add the spices (*gin, *red, *yellow, *pap, *cumin, *turm, *pep) and Tomato Paste.\nOnce the spices are toasted, add the Can of Coconut Milk and *star. Reduce the heat to low and simmer for 5-10 minutes depending on how thick you want the curry.\nCut up the Chicken into bite sized pieces and re-add to the curry base. Simmer until the Chicken is finished cooking, about 5 minutes.\n",
+        "tags": [
+            "turmeric",
+            "paprika",
+            "curry",
+            "red curry powder",
+            "white pepper",
+            "onion",
+            "ginger",
+            "yellow curry powder",
+            "cumin",
+            "curry powder",
+            "tomato paste",
+            "garlic",
+            "chicken",
+            "star anise pods/star anise",
+            "coconut",
+            "zucchini"
+        ]
+    },
     "easy_fritters": {
         "name": "Easy Fritters",
         "text": "<title>\nEasy Fritters\n\n<tags>\nsweets\nlow ingredient\nquick\n\n<batch>\nmakes ~12 Fritters\ntakes ~20 minutes\n\n<tools>\nMedium bowl\nSpatula\nDeep pan or Wok\nWire Rack\n\n<ingredients>\n~1 Quart Neutral Oil *oil\n200 g {tag:Greek yogurt} *yogurt\n140 g All Purpose {tag:Flour} *flour\n10 g {tag:Baking Powder} *bp\n5 g Salt *salt\n\n<instructions>\nHeat *oil in a deep pan or wok to 375F. Oil should be 1-2 inches deep.\nCombine *yogurt, *flour, *bp, and *salt in a medium bowl and mix with a spatula to combine.\nPut small balls of dough in oil and fry until golden brown on one side.\nFlip the fritters to fry the other side.\nRemove and let dry on a wire rack.\n\n<notes>\nIf you want to top these with sugar, you should put them in the sugar bowl as soon as they are removed from the oil so that the sugar sticks to the fritters.\n",
@@ -199,18 +221,18 @@
     },
     "parm_crusted_cod": {
         "name": "Parmesan Crusted Cod",
-        "text": "<title>\nParmesan Crusted Cod\n\n<tags>\nseafood\ncod\nquick\n\n<tools>\n2 Shallow Dishes (or deep plates)\n\n<ingredients>\n2 {alias:Cod Filets/cod}\n1 {tag:Egg}\n1 tbsp {tag:Olive Oil}\n1/4 cup {alias:Grated Parmesan/parmesan}\n{tag:Paprika}\n{alias:Onion Powder/onion}\n{alias:Garlic Powder/garlic}\n{tag:Red pepper flakes}\n\n<instructions>\nPreheat oven to 425 F\nIn one shallow dish crack an egg and add ~1 tbsp of oil oil and beat well.\nIn another shallow dish mix the dry ingredients.\nDip and flip the Cod Flilets in the egg mixture to coat them, then do the same in the dry ingredient dish.\nBake for 10-12 minutes or until is easily flaked with fork\n",
+        "text": "<title>\nParmesan Crusted Cod\n\n<tags>\nseafood\ncod\nquick\n\n<tools>\n2 Shallow Dishes (or deep plates)\nOven or Air Fryer\n\n<ingredients>\n2 {alias:Cod Filets/cod}\n1 {tag:Egg}\n1 tbsp {tag:Olive Oil}\n1/4 cup {alias:Grated Parmesan/parmesan}\n{tag:Paprika}\n{alias:Onion Powder/onion}\n{alias:Garlic Powder/garlic}\n{tag:Red pepper flakes}\n\n<instructions>\nPreheat oven to 425 F\nIn one shallow dish crack an egg and add ~1 tbsp of oil oil and beat well.\nIn another shallow dish mix the dry ingredients.\nDip and flip the Cod Flilets in the egg mixture to coat them, then do the same in the dry ingredient dish.\nBake for 10-12 minutes or until is easily flaked with fork\n",
         "tags": [
+            "quick",
+            "cod",
             "parmesan",
             "red pepper flakes",
-            "cod",
-            "garlic",
-            "paprika",
-            "egg",
+            "olive oil",
             "onion",
+            "paprika",
             "seafood",
-            "quick",
-            "olive oil"
+            "garlic",
+            "egg"
         ]
     },
     "pollo_con_arroz": {

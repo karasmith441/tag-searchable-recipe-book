@@ -1,24 +1,31 @@
 var inpt = document.getElementById("searchbar");
-
-function getUrlParams() {
-
-  var paramMap = {};
-  if (location.search.length == 0) {
-    return paramMap;
-  }
-  var parts = location.search.substring(1).split("&");
-
-  for (var i = 0; i < parts.length; i ++) {
-    var component = parts[i].split("=");
-    paramMap [decodeURIComponent(component[0])] = decodeURIComponent(component[1]);
-  }
-  return paramMap;
+if (location.search.length == 0) {
+	inpt.value = ""
+}
+else
+{
+	inpt.value = decodeURIComponent(location.search.substring(5));
 }
 
-tag_inpt = getUrlParams()['tag'];
-if(tag_inpt != null){
-	inpt.value = tag_inpt;
-}
+// function getUrlParams() {
+
+//   var paramMap = {};
+//   if (location.search.length == 0) {
+//     return paramMap;
+//   }
+//   var parts = location.search.substring(1).split("&");
+
+//   for (var i = 0; i < parts.length; i ++) {
+//     var component = parts[i].split("=");
+//     paramMap[decodeURIComponent(component[0])] = decodeURIComponent(component[1]);
+//   }
+//   return paramMap;
+// }
+
+// tag_inpt = getUrlParams()['tag'];
+// if(tag_inpt != null){
+// 	inpt.value = tag_inpt;
+// }
 
 function clearSearch()
 {
@@ -83,6 +90,8 @@ function evalSearchbar(tags, search)
 				tag_ops.push("|");
 			}
 		}
+		else if(c == "#")
+		{}
 		else
 		{
 			tag += c;
