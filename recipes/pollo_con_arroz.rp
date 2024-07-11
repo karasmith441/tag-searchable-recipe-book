@@ -19,26 +19,26 @@ Dutch oven
 <ingredients chicken>
 
 2 Chicken Breasts
-{tag:Paprika}
-{tag:Chili Powder}
-{alias:Garlic Powder/garlic}
-{tag:Ginger}
+{#Paprika}
+{#Chili Powder}
+{#Garlic Powder @garlic}
+{#Ginger}
 Salt & Pepper
 
 <ingredients Rice>
-2 Cups of {tag:Rice}
-1 Large {tag:Tomato}
-1 Large {tag:Onion} *onion
-4 Cloves of {tag:Garlic} *garlic
-2 tbsp {tag:Turmeric} Powder *turmeric
-2 tbsp {tag:Cumin} *cumin
-1 tbsp {tag:Paprika} *pap
-1 tsp {tag:Cayenne} Powder *cyan
-1 tbsp {tag:Tomato Paste} *paste
-A Pinch of {tag:Saffron} *saff
-A few handfuls of {tag:Feta} Cheese
-1/2 A {tag:Lime}
-A Handful of Fresh {tag:Parsley}
+2 Cups of {#Rice}
+1 Large {#Tomato}
+1 Large {#Onion} *onion
+4 Cloves of {#Garlic} *garlic
+2 tbsp {#Turmeric Powder @turmeric} *turmeric
+2 tbsp {#Cumin} *cumin
+1 tbsp {#Paprika} *pap
+1 tsp {#Cayenne Powder @cayenne} *cyan
+1 tbsp {#Tomato Paste} *paste
+A Pinch of {#Saffron} *saff
+A few handfuls of {#Feta Cheese @feta}
+1/2 A {#Lime}
+A Handful of {#Fresh Parsley @parsley}
 Salt & Pepper
 
 <instructions>

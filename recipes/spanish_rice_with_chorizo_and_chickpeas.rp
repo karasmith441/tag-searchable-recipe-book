@@ -7,25 +7,29 @@ rice
 sausage
 over an hour
 
+<itags>
+stock
+broth
+
 <tools>
 Dutch Oven
 Skillet
 Oven
 
 <ingredients>
-2 Lbs {tag:Andouille}
-6 Cloves of {tag:Garlic}
-1 Medium {tag:Yellow Onion}
-1 Tbsp {tag:Tomato Paste} *paste
-1 Tsp {tag:Paprika} *pap
-A Pinch of {tag:Cinnamon} *cinn
-A Large Pinch {tag:Saffron Threads} *saff
-3 Cup {alias:Chicken/chicken stock} or {alias:Vegetable/vegetable stock} {tag:Stock} *stock
-1/4 Cup Dry {tag:Sherry} *sherry
-One 15-oz. Can {tag:Chickpeas}
+2 Lbs {#Andouille}
+6 Cloves of {#Garlic}
+1 Medium {#Yellow Onion @onion}
+1 Tbsp {#Tomato Paste} *paste
+1 Tsp {#Paprika} *pap
+A Pinch of {#Cinnamon} *cinn
+A Large Pinch {#Saffron Threads @saffron} *saff
+3 Cup {#Chicken @chicken broth} or {#Vegetable @vegetable stock} {#Stock} *stock
+1/4 Cup Dry {#Sherry} *sherry
+One 15-oz. Can {#Chickpeas @chickpea}
 Salt & Pepper
-1 1/2 Cups {alias:Short Grain Rice/rice} *rice
-Finely Chopped {tag:Chives} (Garnish)
+1 1/2 Cups {#Short Grain Rice @rice} *rice
+Finely Chopped {#Chives} (Garnish)
 
 <instructions>
 Preheat oven to 400 F and put the Chickpeas in a colander or strainer to drain.
@@ -38,3 +42,6 @@ Add *sherry, bring to a boil for a few minutes, then add *stock, *pap, *cinn, *s
 Salt to taste, then add *rice and bring back to a boil.
 While it is boiling, move the Dutch oven from the stove the oven and bake, uncovered, until the rice is al dente and the liquid is absorbed, 20–25 minutes.
 Remove from the oven, cover, and let stand until the rice is just tender, about 10 minutes. Garnish with Chives.
+
+<notes>
+Adapted from {link:https://www.saveur.com/recipes/baked-spanish-chorizo-rice/}

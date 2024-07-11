@@ -14,15 +14,15 @@ takes ~4.5 hours
 Cupcake Molds
 
 <ingredients Crust>
-1.5 Packs of {tag:Biscoff Cookies} *biscoff
-1/3 Cup Packed {tag:Brown Sugar} *brown
-4 Tbsp {tag:Butter} *butter
+1.5 Packs of {#Biscoff Cookies} *biscoff
+1/3 Cup Packed {#Brown Sugar} *brown
+4 Tbsp {#Butter} *butter
 
 <ingredients Filling>
-2 14 oz. Cans of {tag:Sweetened Condensed Milk}
-1 Cup {tag:Greek Yogurt} *yogurt
-3/4 Cup {tag:Lime Juice} *lime
-Zest of One {tag:Lime}
+2 14 oz. Cans of {#Sweetened Condensed Milk}
+1 Cup {#Greek Yogurt} *yogurt
+3/4 Cup {#Lime Juice} *lime
+Zest of One {#Lime}
 
 <instructions Crust>
 Preheat oven to 350 F

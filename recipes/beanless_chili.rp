@@ -6,7 +6,6 @@ mexican
 american
 beef
 dairy free
-adjustable spice level
 over an hour
 
 <batch>
@@ -20,20 +19,20 @@ Cutting Board & Knife
 Slow Cooker
 
 <ingredients>
-3-4 lbs {tag:Ground Beef} *beef
-4-5 Large {alias:Carrots/carrot} *carrots
-1 Large {tag:Onion} *onion
-1 Head of {tag:Garlic} *garlic
-1 {tag:Poblano} Chili *poblano
-3-4 {alias:Chipotles/chipotle} in {tag:Adobo} *chipotle
-2 Cans of Fire Roasted {alias:Tomatoes/tomato} *roasties
-1-2 Cans {tag:Tomato Sauce} *sauce
-1/4 Cup {tag:Paprika} *pap
-1/4 Cup {tag:Cumin} *cumin
-1 tsp {tag:Cinnamon} *cinn
-1/2 tsp {tag:Cloves} *cloves
-1/2 tsp {tag:Nutmeg} *nut
-A couple sprigs fresh {tag:Oregano} and {tag:Thyme}, Chopped.
+3-4 lbs {#Ground Beef} *beef
+4-5 Large {#Carrots @carrot} *carrots
+1 Large {#Onion} *onion
+1 Head of {#Garlic} *garlic
+1 {#Poblano} Chili *poblano
+3-4 {#Chipotles @chipotle} in {#Adobo} *chipotle
+2 Cans of Fire Roasted {#Tomatoes @tomato} *roasties
+1-2 Cans {#Tomato Sauce} *sauce
+1/4 Cup {#Paprika} *pap
+1/4 Cup {#Cumin} *cumin
+1 tsp {#Cinnamon} *cinn
+1/2 tsp {#Cloves} *cloves
+1/2 tsp {#Nutmeg} *nut
+A couple sprigs fresh {#Oregano} and {#Thyme}, Chopped.
 Salt and Pepper
 
 <ingredients optional>

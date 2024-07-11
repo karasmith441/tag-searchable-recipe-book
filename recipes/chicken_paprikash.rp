@@ -18,21 +18,21 @@ Food Processor
 
 <ingredients Chicken>
 
-2 {alias:Chicken Breasts/Chicken Breast}
+2 {#Chicken Breasts @chicken breast}
 Some oil
-{tag:Ginger}
-{alias:Garlic Powder/garlic}
+{#Ginger}
+{#Garlic Powder @garlic}
 Salt & Pepper
 
 <ingredients Sauce>
-1 {tag:Red Bell Pepper}
-1 {tag:Onion}
-6 Cloves of {tag:Garlic}
-1 {alias:Bouillon Cube/Bouillon}
-1/4 Cup {tag:Paprika} *pap
-1 Tbsp {tag:Tomato Paste}
-1/2 Tsp {link:Kashmiri Chili Powder/kashmiri chili} (Optional)
-{tag:Heavy Cream}
+1 {#Red Bell Pepper}
+1 {#Onion}
+6 Cloves of {#Garlic}
+1 {#Bouillon Cube @bouillon}
+1/4 Cup {#Paprika} *pap
+1 Tbsp {#Tomato Paste}
+1/2 Tsp {#Kashmiri Chili Powder @kashmiri chili} (Optional)
+{#Heavy Cream}
 
 <ingredients Serving (Optional)>
 Dumplings

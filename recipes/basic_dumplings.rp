@@ -13,9 +13,9 @@ Pot
 Colander or Mesh for drying
 
 <ingredients>
-1 Cup {alias:All Purpose Flour/flour}
-3 {alias:Eggs/egg}
-1 Tbsp {tag:Baking Powder}
+1 Cup {#All Purpose Flour @flour}
+3 {#Eggs @egg}
+1 Tbsp {#Baking Powder}
 1 tsp Salt
 
 <instructions>

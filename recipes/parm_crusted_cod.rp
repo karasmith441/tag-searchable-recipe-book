@@ -11,14 +11,14 @@ quick
 Oven or Air Fryer
 
 <ingredients>
-2 {alias:Cod Filets/cod}
-1 {tag:Egg}
-1 tbsp {tag:Olive Oil}
-1/4 cup {alias:Grated Parmesan/parmesan}
-{tag:Paprika}
-{alias:Onion Powder/onion}
-{alias:Garlic Powder/garlic}
-{tag:Red pepper flakes}
+2 {#Cod Filets @cod}
+1 {#Egg}
+1 tbsp {#Olive Oil}
+1/4 cup {#Grated Parmesan @parmesan}
+{#Paprika}
+{#Onion Powder @onion}
+{#Garlic Powder @garlic}
+{#Red pepper flakes @red pepper flake}
 
 <instructions>
 Preheat oven to 425 F

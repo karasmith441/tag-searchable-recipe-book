@@ -3,6 +3,7 @@ Kashmiri Paneer Curry
 
 <tags>
 indian
+curry
 one pot
 vegetarian
 
@@ -19,24 +20,24 @@ Cutting Board
 Dutch Oven
 
 <ingredients>
-2 lbs {tag:Paneer} *paneer
-1 {tag:Zucchini}
-1.25 Cups water *water
-1.25 Cups {tag:Milk} *milk
-2 tbsp {tag:Cornstarch}
+2 lbs {#Paneer} *paneer
+1 {#Zucchini}
+1.25 Cups Water *water
+1.25 Cups {#Milk} *milk
+2 tbsp {#Cornstarch}
 Some oil (for the pan)
-6 {tag:Black Cardamom} Pods *bcard
-4 {tag:Green Cardamom} Pods *gcard
-4 whole {tag:Cloves} *cloves
-1 tsp {tag:Cumin} seeds *cumin
-1 tsp {tag:Fennel} Seeds *fennel
-2-3 Dried {tag:Bay Leaves} *bay
-1 tbsp Ground {tag:Ginger} *ginger
-1 tbsp Ground {tag:Turmeric} *turmeric
-1 tbsp {tag:Yellow Curry Powder} *curry
-2 tsp {alias:Garlic Powder/garlic} *garlic
-1/4 tsp {tag:Asafoetida powder} *asa
-A dash of {alias:Kashmiri Chili Powder/kashmiri chili} *kashmiri
+6 {#Black Cardamom Pods @black cardamom} *bcard
+4 {#Green Cardamom Pods @green cardamom} *gcard
+4 whole {#Cloves} *cloves
+1 tsp {#Cumin seeds @cumin} *cumin
+1 tsp {#Fennel Seeds @fennel} *fennel
+2-3 Dried {#Bay Leaves @bay leaf} *bay
+1 tbsp Ground {#Ginger} *ginger
+1 tbsp Ground {#Turmeric} *turmeric
+1 tbsp {#Yellow Curry Powder} *curry
+2 tsp {#Garlic Powder @garlic} *garlic
+1/4 tsp {#Asafoetida powder} *asa
+A dash of {#Kashmiri Chili Powder @kashmiri chili} *kashmiri
 
 <ingredients Serving>
 Rice or Naan

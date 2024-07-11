@@ -18,13 +18,13 @@ Cutting Board
 Slow Cooker
 
 <ingredients>
-1 lb Boneless Skinless {tag:Chicken Breast}
-3/4 cup {tag:Tomato Sauce} *tomato
+1 lb Boneless Skinless {#Chicken Breast}
+3/4 cup {#Tomato Sauce} *tomato
 1/4 cup Broth/Stock *broth
-4 Cloves of {tag:Garlic} *garlic
-2 tbsp {alias:Adobo Sauce/adobo} *adobo
-2 {alias:Chipotles/chipotle} in {tag:Adobo} *chipotle
-2 tsp {tag:Cumin} *cumin
+4 Cloves of {#Garlic} *garlic
+2 tbsp {#Adobo Sauce @adobo} *adobo
+2 {#Chipotles @chipotle} in {#Adobo} *chipotle
+2 tsp {#Cumin} *cumin
 Salt & Pepper (vibes based)
 
 <ingredients For Serving (Optional)>

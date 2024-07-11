@@ -98,7 +98,7 @@ function evalSearchbar(tags, search)
 		}
 	}
 
-	if(tag.trim()[0] == "!")
+	if(tag.trim()[0] == "!" || tag.trim()[0] == "-")
 	{
 		tag_bools.push(tags.indexOf(tag.trim().slice(1)) < 0);
 	}

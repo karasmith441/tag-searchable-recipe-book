@@ -34,11 +34,11 @@ def main():
 
 	for path in recipe_files:
 		ID = path[-path[::-1].find('\\'):-(path[::-1].find(".")+1)]
-		with open(f"recipes/{ID}.rp") as file:
+		with open(f"recipes/{ID}.rp", encoding="utf-8") as file:
 			text = file.read()
 			if forceall or (ID not in rpbase) or rpbase[ID]['text'] != text:
+				print(path)
 				recipe_dict = parse_rp(ID, text)
-				print(f"{recipe_dict['title']}")
 				rpbase[ID] = {'name': recipe_dict['title'], 'text': text, 'tags': list(set(recipe_dict['tags'] + recipe_dict.get('itags', []) + recipe_dict.get('ingredient_tags',[])))}
 
 				#writeJSON(recipe_dict)
@@ -80,7 +80,7 @@ def sys_args():
 			recipe_files = [sys.argv[index+1]]
 			forceall = True
 		except IndexError:
-			print(f"--file flag requires a file parameter")
+			print(f"-r flag requires a recipe file")
 		except FileNotFoundError:
 			print(f"File {sys.argv[index+1]} does not exist.")
 
@@ -88,7 +88,7 @@ def sys_args():
 
 def parse_rp(ID, text):
 
-	sections = re.findall("<(.*)>\n([^<]*)", text)
+	sections = re.findall(r"<(.*)>[^\*\n]*\n([^<]*)", text)
 	
 	recipe_dict = {"id": ID}
 	ingredient_reference = {}
@@ -97,6 +97,7 @@ def parse_rp(ID, text):
 
 		head = s[0].strip()
 		body = s[1].strip()
+
 		if " " in head:
 			title = head[:head.find(" ")+1].strip()
 		else:
@@ -133,10 +134,13 @@ def parse_rp(ID, text):
 				for l in body.split("\n"):
 					line = l.strip()
 					if line != "":
-
-						recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"{tag:([^}]*)}", line)]
-						recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"{alias:[^/]*/([^}]*)}", line)]
-
+						
+						# recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"#([^;@]*);", line)]
+						# recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"#[^;@]*@([^;]*);", line)]
+						
+						recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"{(?:tag:|#)(?:[^,@}]*)(?:,|@)([^}]*)}", line)]
+						recipe_dict['ingredient_tags'] = recipe_dict.get('ingredient_tags', []) + [t.strip().lower() for t in re.findall(r"{(?:tag:|#)([^\#}]*)}", line)]
+						
 						tagged = line.split("*")
 						item = tagged[0].strip()
 
@@ -179,9 +183,9 @@ def writeHTML(recipe_dict):
 	file.close()
 
 def tagLinkBuilder(m):
-	return f'<a href="../index.html?tag={m.group(1).lower()}" style="color: #2c87f0; text-decoration: none">{m.group(1)}</a>'
+	return f'<a href="../index.html?tag={m.group(1).strip().lower()}" style="color: #2c87f0; text-decoration: none">{m.group(1).strip()}</a>'
 def aliasLinkBuilder(m):
-	return f'<a href="../index.html?tag={m.group(2).lower()}" style="color: #2c87f0; text-decoration: none">{m.group(1)}</a>'
+	return f'<a href="../index.html?tag={m.group(2).strip().lower()}" style="color: #2c87f0; text-decoration: none">{m.group(1).strip()}</a>'
 
 def htmlBuilder(recipe_dict):
 	
@@ -229,10 +233,11 @@ def htmlBuilder(recipe_dict):
 			if subtitle != 'default':
 				ingredients.append(f"<h3>{subtitle}</h3>")
 			ingredients.append("<ul>")
-			for i in recipe_dict['ingredients'][subtitle]:
-				i = re.sub(r"{(?:tag|link):([^}]*)}", tagLinkBuilder, i)
-				i = re.sub(r"{(?:alias|tag|link):([^/]*)/([^}]*)}", aliasLinkBuilder, i)
-				ingredients.append(f"<li>{i}</li>")
+			for l in recipe_dict['ingredients'][subtitle]:
+
+				l = re.sub(r"{(?:tag:|#|link)([^,@}]*)(?:,|@)([^}]*)}", aliasLinkBuilder, l)
+				l = re.sub(r"{(?:tag:|#|link)([^}]*)}", tagLinkBuilder, l)
+				ingredients.append(f"<li>{l}</li>")
 			ingredients.append("</ul>")
 		html += ingredients
 	
@@ -243,8 +248,9 @@ def htmlBuilder(recipe_dict):
 				instructions.append(f"<h3>{subtitle}</h3>")
 			instructions += ["<ol>"]
 			for l in recipe_dict['instructions'][subtitle]:
-				l = re.sub(r"{(?:tag|link):([^}]*)}", r"\1", l)
-				l = re.sub(r"{(?:alias|tag|link):([^/]*)/([^}]*)}", r"\1", l)
+
+				l = re.sub(r"{(?:tag:|#|link)([^,@}]*)(?:,|@)([^}]*)}", r"\1", l)
+				l = re.sub(r"{(?:tag:|#|link)([^}]*)}", r"\1", l)
 				instructions.append(f"<li>{l}</li>")
 			instructions.append("</ol>")
 		html += instructions
@@ -260,7 +266,7 @@ def htmlBuilder(recipe_dict):
 				notes.append(l + "<br>")
 			notes.append("</p>")
 		html += notes
-	
+
 	html += ["</body>", "</html>"]
 	return html
 

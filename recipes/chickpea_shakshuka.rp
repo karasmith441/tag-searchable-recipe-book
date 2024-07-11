@@ -5,7 +5,6 @@ Chickpea Shakshuka
 north african
 middle eastern
 one pot
-adjustable spice level
 vegetarian
 
 <itags>
@@ -21,17 +20,17 @@ Cutting Board
 Dutch Oven
 
 <ingredients>
-1 Large {tag:Onion} *onion
-1 {tag:Red Bell Pepper} *pepper
-3 Cloves of {tag:Garlic} *garlic
-1 tbsp {tag:Paprika} *pap
-2 tsp {tag:Cumin} *cumin
-1 1/2 tsp {tag:Fennel} Seeds *fennel
-1/4 tsp {tag:Cinnamon} *cinn
-1/4 tsp {tag:Cayenne} Powder *cyan
-1 28-oz Can of {alias:Tomatoes/tomato} (whole or crushed or peeled or diced based on preference and based on price)
-1 15 oz. Can of {tag:Chickpeas}
-1 tbsp {tag:Sugar}
+1 Large {#Onion} *onion
+1 {#Red Bell Pepper} *pepper
+3 Cloves of {#Garlic} *garlic
+1 tbsp {#Paprika} *pap
+2 tsp {#Cumin} *cumin
+1 1/2 tsp {#Fennel} Seeds *fennel
+1/4 tsp {#Cinnamon} *cinn
+1/4 tsp {#Cayenne} Powder *cyan
+1 28-oz Can of {#Tomatoes @tomato} (whole or crushed or peeled or diced based on preference and based on price)
+1 15 oz. Can of {#Chickpeas}
+1 tbsp {#Sugar}
 
 <ingredients toppings>
 Eggs (Number depending on preference)

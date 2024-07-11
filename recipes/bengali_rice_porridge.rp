@@ -6,26 +6,30 @@ indian
 rice
 chicken
 
+<itags>
+Broth
+Stock
+
 <tools>
 Dutch Oven
 
 <ingredients Chicken>
-2 {alias:Chicken Breasts/Chicken Breast}
-{tag:Paprika}
-{alias:Garlic Powder/garlic}
+2 {#Chicken Breasts @chicken breast}
+{#Paprika}
+{#Garlic Powder @garlic}
 Salt & Pepper
 
 <ingredients Rice>
-2 Tbsp {tag:Ghee} *ghee
-1 Inch {alias:Fresh Ginger Root/ginger} *ginger
-1 Inch {alias:Fresh Turmeric Root/turmeric} *turmeric
-1 Cup {alias:Short Grain Rice/rice} *rice
-1/4 Cup {tag:Red Lentils} *lentils
-6 Cups {tag:Chicken Stock} *sherry
-1/2 Cup {tag:Sherry} (or just more stock if you don't have sherry)
-1/2 Tsp {tag:Kashmiri Chili Powder} *kashmiri
-2 {alias:Thai Green Chilies/thai green chili} *green
-1 {tag:Lime}
+2 Tbsp {#Ghee} *ghee
+1 Inch {#Fresh Ginger Root @ginger} *ginger
+1 Inch {#Fresh Turmeric Root @turmeric} *turmeric
+1 Cup {#Short Grain Rice @rice} *rice
+1/4 Cup {#Red Lentils} *lentils
+6 Cups {#Chicken Broth} *sherry
+1/2 Cup {#Sherry} (or just more stock if you don't have sherry)
+1/2 Tsp {#Kashmiri Chili Powder @kashmiri chili} *kashmiri
+2 {#Thai Green Chilies @green chili} *green
+1 {#Lime}
 
 <instructions>
 Pound flat and spice the chicken breasts with paprika, garlic powder, and salt & pepper, then sear in a Dutch oven.
