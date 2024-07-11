@@ -193,10 +193,12 @@ def htmlBuilder(recipe_dict):
 		"<html>",
 		"<head>",
 		"<link rel=\"stylesheet\" href=\"../main.css\">",
+		"<script>function backHandler(event){window.location.href=\"../index.html?tag=\"+sessionStorage.getItem(\"search\").replace(/\\//g, \"|\").replace(/&/g, \"+\");}</script>",
 		f"<title>{recipe_dict['title']}</title>",
 		"</head>",
 		"<body>",
-        "<a href=\"../index.html\" class=button>Back</a>"]
+		"<button id=\"back\" onclick=\"backHandler()\">Back</button>"]
+        #"<a href=\"../index.html\" class=button>Back</a>"]
 
 	html += [f"<h1>{recipe_dict['title']}</h1>"]
 

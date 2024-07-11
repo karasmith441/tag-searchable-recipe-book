@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
         <title>Chicken Enchilada Soup</title>
     </head>
     <body>
-        <a href="../index.html" class=button>Back</a>
+        <button id="back" onclick="backHandler()">Back</button>
         <h1>Chicken Enchilada Soup</h1>
         <p>
             <a href="../index.html?tag=chicken" class="tags">#chicken</a>
@@ -30,7 +31,7 @@
         </ul>
         <h3>Soup</h3>
         <ul>
-            <li>1 #Yellow <a href="../index.html?tag=onion" style="color: #2c87f0; text-decoration: none">Onion</a></li>
+            <li>1 <a href="../index.html?tag=onion" style="color: #2c87f0; text-decoration: none">Yellow Onion</a></li>
             <li>6 Cloves of <a href="../index.html?tag=garlic" style="color: #2c87f0; text-decoration: none">Garlic</a></li>
             <li>1/2 A <a href="../index.html?tag=jalapeño" style="color: #2c87f0; text-decoration: none">Jalapeño</a></li>
             <li>2 <a href="../index.html?tag=chipotle" style="color: #2c87f0; text-decoration: none">Chipotles</a> in <a href="../index.html?tag=adobo" style="color: #2c87f0; text-decoration: none">Adobo</a></li>
@@ -58,7 +59,7 @@
         <h3>Prep</h3>
         <ol>
             <li>Season Chicken with salt, pepper, cumin, paprika, and garlic powder.</li>
-            <li>Finely chop 1 #Yellow Onion, 6 Cloves of Garlic, 1/2 A Jalapeño, and 2 Chipotles in Adobo</li>
+            <li>Finely chop 1 Yellow Onion , 6 Cloves of Garlic, 1/2 A Jalapeño, and 2 Chipotles in Adobo</li>
             <li>In a small bowl, mix the spice blend.</li>
         </ol>
         <h3>Cook</h3>

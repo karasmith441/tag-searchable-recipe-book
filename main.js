@@ -1,11 +1,9 @@
+// ======================== Globals ========================
+
 var inpt = document.getElementById("searchbar");
-if (location.search.length == 0) {
-	inpt.value = ""
-}
-else
-{
-	inpt.value = decodeURIComponent(location.search.substring(5)).replace(/\+/g, "&");
-}
+
+
+// ======================= Functions =======================
 
 // function getUrlParams() {
 
@@ -30,12 +28,13 @@ else
 function clearSearch()
 {
 	inpt.value = "";
-	window.location.href = "index.html"
+	window.location.href = "index.html";
 	readBase();
 }
 
 function readBase()
 {
+	sessionStorage.setItem('search', inpt.value);
 	fetch("rpbase.json").then((response) => response.json()).then((json) => generateLinks(json));
 }
 
@@ -144,6 +143,11 @@ function generateLinks(json)
 	}
 }
 
+// ======================== Main ========================
+
+if (location.search.length != 0) {
+	inpt.value = decodeURIComponent(location.search.substring(5)).replace(/\+/g, "&");
+}
 readBase();
 inpt.addEventListener("keyup", function(event) {
 	if (event.key === "Enter"){

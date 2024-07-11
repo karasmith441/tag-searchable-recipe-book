@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
         <title>Baked Spanish Rice with Andouille and Chickpeas</title>
     </head>
     <body>
-        <a href="../index.html" class=button>Back</a>
+        <button id="back" onclick="backHandler()">Back</button>
         <h1>Baked Spanish Rice with Andouille and Chickpeas</h1>
         <p>
             <a href="../index.html?tag=over an hour" class="tags">#over an hour</a>

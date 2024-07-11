@@ -2,13 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
         <title>Chickpea Shakshuka</title>
     </head>
     <body>
-        <a href="../index.html" class=button>Back</a>
+        <button id="back" onclick="backHandler()">Back</button>
         <h1>Chickpea Shakshuka</h1>
         <p>
-            <a href="../index.html?tag=adjustable spice level" class="tags">#adjustable spice level</a>
             <a href="../index.html?tag=middle eastern" class="tags">#middle eastern</a>
             <a href="../index.html?tag=north african" class="tags">#north african</a>
             <a href="../index.html?tag=one pot" class="tags">#one pot</a>

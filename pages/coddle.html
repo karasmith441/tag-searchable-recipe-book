@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
         <title>Coddle</title>
     </head>
     <body>
-        <a href="../index.html" class=button>Back</a>
+        <button id="back" onclick="backHandler()">Back</button>
         <h1>Coddle</h1>
         <p>
             <a href="../index.html?tag=irish" class="tags">#irish</a>
@@ -52,5 +53,9 @@
             <li>Just cover with broth and add 1 Bay Leaf and 2 Sprigs of Thyme.</li>
             <li>Bake covered for 2.5 hours.</li>
         </ol>
+        <h2>Notes</h2>
+        <p>
+            Adapted from <a href="https://wholefully.com/dublin-coddle-7/#mv-creation-206-jtr">https://wholefully.com/dublin-coddle-7/#mv-creation-206-jtr</a><br>
+        </p>
     </body>
 </html>

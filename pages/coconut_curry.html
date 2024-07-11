@@ -2,14 +2,16 @@
 <html>
     <head>
         <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
         <title>Coconut Curry</title>
     </head>
     <body>
-        <a href="../index.html" class=button>Back</a>
+        <button id="back" onclick="backHandler()">Back</button>
         <h1>Coconut Curry</h1>
         <p>
             <a href="../index.html?tag=chicken" class="tags">#chicken</a>
             <a href="../index.html?tag=curry" class="tags">#curry</a>
+            <a href="../index.html?tag=indian" class="tags">#indian</a>
         </p>
         <h2>Batch and Time</h2>
         <p class="big-p">

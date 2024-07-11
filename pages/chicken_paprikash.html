@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
         <title>Chicken Paprikash</title>
     </head>
     <body>
-        <a href="../index.html" class=button>Back</a>
+        <button id="back" onclick="backHandler()">Back</button>
         <h1>Chicken Paprikash</h1>
         <p>
             <a href="../index.html?tag=chicken" class="tags">#chicken</a>
@@ -35,7 +36,7 @@
             <li>1 <a href="../index.html?tag=bouillon" style="color: #2c87f0; text-decoration: none">Bouillon Cube</a></li>
             <li>1/4 Cup <a href="../index.html?tag=paprika" style="color: #2c87f0; text-decoration: none">Paprika</a></li>
             <li>1 Tbsp <a href="../index.html?tag=tomato paste" style="color: #2c87f0; text-decoration: none">Tomato Paste</a></li>
-            <li>1/2 Tsp <a href="../index.html?tag=:kashmiri chili powder/kashmiri chili" style="color: #2c87f0; text-decoration: none">:Kashmiri Chili Powder/kashmiri chili</a> (Optional)</li>
+            <li>1/2 Tsp <a href="../index.html?tag=kashmiri chili" style="color: #2c87f0; text-decoration: none">Kashmiri Chili Powder</a> (Optional)</li>
             <li><a href="../index.html?tag=heavy cream" style="color: #2c87f0; text-decoration: none">Heavy Cream</a></li>
         </ul>
         <h3>Serving (Optional)</h3>
