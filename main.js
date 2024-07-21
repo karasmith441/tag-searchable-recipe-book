@@ -38,7 +38,7 @@ function readBase()
 	fetch("rpbase.json").then((response) => response.json()).then((json) => generateLinks(json));
 }
 
-function evalSearchbar(tags, search)
+function evalSearchbar(tags, otags, search)
 {
 	let tag_bools = [];
 	let tag_ops = [];
@@ -75,7 +75,7 @@ function evalSearchbar(tags, search)
 				}
 				else
 				{
-					tag_bools.push(tags.indexOf(tag.trim()) >= 0);
+					tag_bools.push(tags.indexOf(tag.trim()) >= 0 || otags.indexOf(tag.trim()) >= 0);
 				}
 			}
 			tag = "";
@@ -103,7 +103,7 @@ function evalSearchbar(tags, search)
 	}
 	else
 	{
-		tag_bools.push(tags.indexOf(tag.trim()) >= 0);
+		tag_bools.push(tags.indexOf(tag.trim()) >= 0 || otags.indexOf(tag.trim()) >= 0);
 	}
 
 	bool = tag_bools[0];
@@ -128,13 +128,13 @@ function generateLinks(json)
 {
 	document.getElementById("links").innerHTML = "";
 	query = inpt.value.trim();
-	
+
 	for(const [k, v] of Object.entries(json))
 	{
 		flag = true;
 		if(query != "")
 		{
-			flag = evalSearchbar(v["tags"], query);
+			flag = evalSearchbar(v["tags"], v["otags"], query);
 		}
 		if(flag)
 		{
@@ -154,4 +154,3 @@ inpt.addEventListener("keyup", function(event) {
 		readBase();
 	}
 });
-

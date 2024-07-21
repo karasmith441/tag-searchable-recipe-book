@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../main.css">
+        <script>function backHandler(event){window.location.href="../index.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+        <title>Kara's Morning Smoothie</title>
+    </head>
+    <body>
+        <button id="back" onclick="backHandler()">Back</button>
+        <h1>Kara's Morning Smoothie</h1>
+        <p>
+            <a href="../index.html?tag=low ingredient" class="tags">#low ingredient</a>
+            <a href="../index.html?tag=quick" class="tags">#quick</a>
+            <a href="../index.html?tag=smoothie" class="tags">#smoothie</a>
+            <a href="../index.html?tag=vegetarian" class="tags">#vegetarian</a>
+        </p>
+        <h2>Batch and Time</h2>
+        <p class="big-p">
+            Makes 1 smoothie<br>
+            Takes 15 minutes<br>
+        </p>
+        <h2>Equipment</h2>
+        <ul>
+            <li>blender</li>
+        </ul>
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 Frozen <a href="../index.html?tag=banana" style="color: #2c87f0; text-decoration: none">Banana</a> (Split into chunks)</li>
+            <li>5 <a href="../index.html?tag=date" style="color: #2c87f0; text-decoration: none">Dates</a></li>
+            <li>A Spoonful of <a href="../index.html?tag=cacao nib" style="color: #2c87f0; text-decoration: none">Cacao Nibs</a> (chocolate chips are an alternative if you don't have nibs)</li>
+            <li>A Spoonful of <a href="../index.html?tag=peanut butter" style="color: #2c87f0; text-decoration: none">Peanut Butter</a></li>
+            <li>A Handful of <a href="../index.html?tag=spinach" style="color: #2c87f0; text-decoration: none">Spinach</a> (Optional)</li>
+            <li>Enough <a href="../index.html?tag=milk" style="color: #2c87f0; text-decoration: none">Milk</a> (or Milk Substitute) to make the smoothie smooth</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Put ingredients in blender and blend until smooth. Add more liquid if necessary.</li>
+        </ol>
+    </body>
+</html>
