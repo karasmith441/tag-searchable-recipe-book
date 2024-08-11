@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../main.css">
+    <script>function backHandler(event){window.location.href="../cocktail_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+    <title>Old Fashioned</title>
+  </head>
+  <body>
+    <button id="back" onclick="backHandler()">Back</button>
+    <h1>Old Fashioned</h1>
+    <p>
+      <a href="../cocktail_search.html?tag=bourbon" class="tags">#bourbon</a>
+      <a href="../cocktail_search.html?tag=whiskey" class="tags">#whiskey</a>
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 oz. Bourbon</li>
+      <li>1/4 oz. Simple Syrup</li>
+      <li>2 Dashes Angostura Bitters</li>
+      <li>Orange Peel to Garnish</li>
+    </ul>
+    <h3>Preparation</h3>
+    <p class="Big-P" style="margin-top: -5px; margin-left: 15px">
+      Stir with one large ice cube.<br>
+    </p>
+  </body>
+</html>

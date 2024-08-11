@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../main.css">
+    <script>function backHandler(event){window.location.href="../cocktail_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+    <title>Manhattan</title>
+  </head>
+  <body>
+    <button id="back" onclick="backHandler()">Back</button>
+    <h1>Manhattan</h1>
+    <p>
+      <a href="../cocktail_search.html?tag=bourbon" class="tags">#bourbon</a>
+      <a href="../cocktail_search.html?tag=whiskey" class="tags">#whiskey</a>
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 oz. <a href="../cocktail_search.html?tag=bourbon" style="color: #2c87f0; text-decoration: none">Bourbon</a></li>
+      <li>3/4 oz. <a href="../cocktail_search.html?tag=sweet vermouth" style="color: #2c87f0; text-decoration: none">Sweet Vermouth</a></li>
+      <li>1 Barspoon <a href="../cocktail_search.html?tag=cherry syrup" style="color: #2c87f0; text-decoration: none">Cherry Syrup</a></li>
+      <li>2 Dashes <a href="../cocktail_search.html?tag=angostura bitter" style="color: #2c87f0; text-decoration: none">Angostura Bitters</a></li>
+      <li>2 <a href="../cocktail_search.html?tag=cherry" style="color: #2c87f0; text-decoration: none">Cherries</a></li>
+    </ul>
+    <h3>Preparation</h3>
+    <p class="Big-P" style="margin-top: -5px; margin-left: 15px">
+      Stirred over ice<br>
+    </p>
+  </body>
+</html>

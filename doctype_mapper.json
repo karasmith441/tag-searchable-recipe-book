@@ -1,0 +1,12 @@
+{
+  "food": {
+    "dbpath": "recipe-book/rpbase.json",
+    "back_dir": "../recipe_search.html",
+    "save_dir": "recipe-book"
+  },
+  "drink": {
+    "dbpath": "cocktail-book/cbase.json",
+    "back_dir": "../cocktail_search.html",
+    "save_dir": "cocktail-book"
+  }
+}

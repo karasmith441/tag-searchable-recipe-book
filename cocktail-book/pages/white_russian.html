@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../main.css">
+    <script>function backHandler(event){window.location.href="../cocktail_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+    <title>White Russian</title>
+  </head>
+  <body>
+    <button id="back" onclick="backHandler()">Back</button>
+    <h1>White Russian</h1>
+    <p>
+      <a href="../cocktail_search.html?tag=vodka" class="tags">#vodka</a>
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>2 oz. <a href="../cocktail_search.html?tag=vodka" style="color: #2c87f0; text-decoration: none">Vodka</a></li>
+      <li>1 oz. <a href="../cocktail_search.html?tag=kahlua" style="color: #2c87f0; text-decoration: none">Kahlua</a></li>
+      <li>1 oz. <a href="../cocktail_search.html?tag=milk" style="color: #2c87f0; text-decoration: none">Milk</a></li>
+    </ul>
+    <h3>Preparation</h3>
+    <p class="Big-P" style="margin-top: -5px; margin-left: 15px">
+      Stirred over ice<br>
+    </p>
+  </body>
+</html>

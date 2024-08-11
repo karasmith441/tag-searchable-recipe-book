@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../main.css">
+	</head>
+	<body>
+    <div>
+      <input id="searchbar" type="text" placeholder="enter tags...">
+  		<button id="search" onclick="readBase('rpbase.json')">Search</button>
+  		<button id="clear" onclick="clearSearch('recipe_search.html')">Clear</button>
+  		<!-- <button id="help" onclick="window.location.href='recipe_help.html';">Help</button> -->
+  		<button id="home" onclick="window.location.href='../index.html';">Home</button>
+  		<br>
+  		<br>
+  		<div id="links">
+  		</div>
+    </div>
+	</body>
+  <script src="../tag_search.js" type="text/javascript"></script>
+  <script>
+    if (location.search.length != 0) {
+    	inpt.value = getUrlParams()["tag"].replace(/\+/g, "&");
+    }
+    inpt.addEventListener("keyup", function(event) {
+    	if (event.key === "Enter"){
+    		readBase("rpbase.json");
+    	}
+    });
+    readBase("rpbase.json");
+  </script>
+</html>

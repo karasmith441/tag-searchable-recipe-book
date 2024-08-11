@@ -1,0 +1,39 @@
+{
+    "dark_and_stormy": {
+        "name": "Dark and Stormy",
+        "tags": [
+            "rum"
+        ],
+        "otags": []
+    },
+    "manhattan": {
+        "name": "Manhattan",
+        "tags": [
+            "bourbon",
+            "vermouth",
+            "sweet vermouth",
+            "whiskey",
+            "cherry",
+            "cherry syrup",
+            "angostura bitter"
+        ],
+        "otags": []
+    },
+    "old_fashioned": {
+        "name": "Old Fashioned",
+        "tags": [
+            "bourbon",
+            "whiskey"
+        ],
+        "otags": []
+    },
+    "white_russian": {
+        "name": "White Russian",
+        "tags": [
+            "milk",
+            "kahlua",
+            "vodka"
+        ],
+        "otags": []
+    }
+}

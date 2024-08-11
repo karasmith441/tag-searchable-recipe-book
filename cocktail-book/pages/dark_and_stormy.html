@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../main.css">
+    <script>function backHandler(event){window.location.href="../cocktail_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+    <title>Dark and Stormy</title>
+  </head>
+  <body>
+    <button id="back" onclick="backHandler()">Back</button>
+    <h1>Dark and Stormy</h1>
+    <p>
+      <a href="../cocktail_search.html?tag=rum" class="tags">#rum</a>
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>4 oz. Ginger Beer</li>
+      <li>2 oz. Spiced Rum</li>
+      <li>1/2 oz. Lime Juice</li>
+    </ul>
+    <h3>Preparation</h3>
+    <p class="Big-P" style="margin-top: -5px; margin-left: 15px">
+      Pour Ginger Beer into a tall glass over ice and mix Lime and Rum in a different glass<br>
+      Float the Lime/Rum mix on the Ginger Beer<br>
+    </p>
+  </body>
+</html>

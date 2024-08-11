@@ -1,0 +1,563 @@
+{
+    "aloo_gobi": {
+        "name": "Aloo Gobi",
+        "tags": [
+            "ancho chili",
+            "indian",
+            "kashmiri chili",
+            "cauliflower",
+            "cumin",
+            "tomato",
+            "coriander",
+            "onion",
+            "vegan",
+            "cashew",
+            "black cardamom",
+            "dairy free",
+            "green chili",
+            "potato",
+            "ginger",
+            "garam masala",
+            "vegetarian",
+            "amchur powder",
+            "garlic",
+            "curry",
+            "turmeric",
+            "cardamom"
+        ],
+        "otags": []
+    },
+    "aloo_tikkis_with_broccoli": {
+        "name": "Aloo Tikkis with Broccoli",
+        "tags": [
+            "parsley",
+            "garam masala",
+            "vegetarian",
+            "green onion",
+            "chaat masala",
+            "side",
+            "indian",
+            "broccoli",
+            "breadcrumb",
+            "snack",
+            "egg",
+            "cumin",
+            "green chili",
+            "potato"
+        ],
+        "otags": []
+    },
+    "spanish_rice_with_chorizo_and_chickpeas": {
+        "name": "Baked Spanish Rice with Andouille and Chickpeas",
+        "tags": [
+            "sherry",
+            "rice",
+            "andouille",
+            "saffron",
+            "chicken broth",
+            "chickpea",
+            "spanish",
+            "onion",
+            "broth",
+            "garlic",
+            "chives",
+            "over an hour",
+            "cinnamon",
+            "stock",
+            "vegetable stock",
+            "tomato paste",
+            "paprika",
+            "sausage"
+        ],
+        "otags": []
+    },
+    "basic_dumplings": {
+        "name": "Basic Dumplings",
+        "tags": [
+            "baking powder",
+            "quick",
+            "one pot",
+            "side",
+            "flour",
+            "egg",
+            "low ingredient"
+        ],
+        "otags": []
+    },
+    "beanless_chili": {
+        "name": "Beanless Chili",
+        "tags": [
+            "american",
+            "over an hour",
+            "tomato sauce",
+            "chipotle",
+            "oregano",
+            "ground beef",
+            "cumin",
+            "thyme",
+            "tomato",
+            "cloves",
+            "nutmeg",
+            "onion",
+            "cinnamon",
+            "dairy free",
+            "paprika",
+            "carrot",
+            "beef",
+            "garlic",
+            "adobo",
+            "mexican",
+            "poblano chili"
+        ],
+        "otags": [
+            "corn",
+            "adobo"
+        ]
+    },
+    "bengali_rice_porridge": {
+        "name": "Bengali Rice Porridge",
+        "tags": [
+            "sherry",
+            "rice",
+            "ginger",
+            "chicken broth",
+            "red lentils",
+            "ghee",
+            "broth",
+            "garlic",
+            "turmeric",
+            "indian",
+            "over an hour",
+            "chicken breast",
+            "stock",
+            "lime",
+            "paprika",
+            "green chili",
+            "chicken",
+            "kashmiri chili"
+        ],
+        "otags": []
+    },
+    "carnitas": {
+        "name": "Carnitas",
+        "tags": [
+            "pork shoulder",
+            "oregano",
+            "orange",
+            "pork",
+            "jalapeno",
+            "onion",
+            "one pot",
+            "garlic",
+            "over an hour",
+            "lime",
+            "cumin",
+            "mexican",
+            "paprika",
+            "jalape\u00f1o",
+            "olive oil"
+        ],
+        "otags": []
+    },
+    "chicken_enchilada_soup": {
+        "name": "Chicken Enchilada Soup",
+        "tags": [
+            "garlic powder",
+            "ancho chili",
+            "salt",
+            "pepper",
+            "jalape\u00f1o",
+            "oregano",
+            "yellow onion, onion",
+            "chipotles, chipotle",
+            "ancho powder",
+            "corn",
+            "ancho chili powder",
+            "cumin",
+            "jalapeno",
+            "tomato paste",
+            "lime juice",
+            "ancho",
+            "cream cheese",
+            "tomato",
+            "coriander",
+            "soup",
+            "onion",
+            "cinnamon",
+            "masa harina",
+            "paprika",
+            "cheese",
+            "parsley",
+            "garlic",
+            "stock",
+            "adobo",
+            "mexican",
+            "chicken",
+            "chicken thighs"
+        ],
+        "otags": []
+    },
+    "chicken_paprikash": {
+        "name": "Chicken Paprikash",
+        "tags": [
+            "ginger",
+            "cream",
+            "hungarian",
+            "tomato",
+            "red bell pepper",
+            "onion",
+            "one pot",
+            "garlic",
+            "bouillon",
+            "chicken breast",
+            "paprika",
+            "heavy cream",
+            "tomato paste",
+            "bell pepper",
+            "chicken"
+        ],
+        "otags": [
+            "green onion",
+            "kashmiri chili"
+        ]
+    },
+    "chicken_tikka_masala": {
+        "name": "Chicken Tikka Masala",
+        "tags": [
+            "yogurt",
+            "cayenne",
+            "indian",
+            "tomato puree",
+            "red curry powder",
+            "kashmiri chili",
+            "curry leaf",
+            "ghee",
+            "fenugreek",
+            "lime juice",
+            "cumin",
+            "marinade",
+            "tomato",
+            "nutmeg",
+            "onion",
+            "heavy cream",
+            "paprika",
+            "garam masala",
+            "garlic",
+            "curry",
+            "turmeric",
+            "chicken thigh",
+            "curry powder",
+            "chicken"
+        ],
+        "otags": []
+    },
+    "chickpea_shakshuka": {
+        "name": "Chickpea Shakshuka",
+        "tags": [
+            "chickpeas",
+            "vegetarian",
+            "cayenne",
+            "tomato",
+            "north african",
+            "middle eastern",
+            "one pot",
+            "onion",
+            "red bell pepper",
+            "garlic",
+            "cinnamon",
+            "sugar",
+            "cumin",
+            "fennel",
+            "bell pepper",
+            "paprika"
+        ],
+        "otags": []
+    },
+    "chipotle_adobo_shredded_chicken": {
+        "name": "Chipotle & Adobo Shredded Chicken",
+        "tags": [
+            "chipotle",
+            "tomato",
+            "one pot",
+            "garlic",
+            "over an hour",
+            "chicken breast",
+            "adobo",
+            "cumin",
+            "mexican",
+            "tomato sauce"
+        ],
+        "otags": []
+    },
+    "coconut_curry": {
+        "name": "Coconut Curry",
+        "tags": [
+            "ginger",
+            "coconut",
+            "onion",
+            "zucchini",
+            "garlic",
+            "curry",
+            "yellow curry powder",
+            "indian",
+            "turmeric",
+            "white pepper",
+            "star anise pods/star anise",
+            "curry powder",
+            "paprika",
+            "cumin",
+            "tomato paste",
+            "chicken",
+            "red curry powder"
+        ],
+        "otags": []
+    },
+    "coddle": {
+        "name": "Coddle",
+        "tags": [
+            "bacon",
+            "chicken broth",
+            "pork broth",
+            "flour",
+            "sausage",
+            "bay leaf",
+            "pork",
+            "one pot",
+            "beef broth",
+            "pork sausage",
+            "thyme",
+            "soup",
+            "onion",
+            "potato",
+            "irish",
+            "parsley",
+            "broth",
+            "garlic",
+            "stout"
+        ],
+        "otags": []
+    },
+    "creamy_tuscan_chicken_pasta": {
+        "name": "Creamy Tuscan Chicken Pasta",
+        "tags": [
+            "rosemary",
+            "garlic powder",
+            "italian",
+            "flour",
+            "chicken breast",
+            "oregano",
+            "parmesan",
+            "thyme",
+            "tomato",
+            "pasta",
+            "onion",
+            "spinach",
+            "sundried tomato oil",
+            "paprika",
+            "chicken",
+            "ginger",
+            "sundried tomato",
+            "garlic",
+            "half and half"
+        ],
+        "otags": []
+    },
+    "dad's_crepes": {
+        "name": "Dad's Crepes",
+        "tags": [
+            "flour",
+            "milk",
+            "vanilla",
+            "egg"
+        ],
+        "otags": []
+    },
+    "easy_fritters": {
+        "name": "Easy Fritters",
+        "tags": [
+            "treat",
+            "greek yogurt",
+            "baking powder",
+            "quick",
+            "flour",
+            "easy",
+            "low ingredient"
+        ],
+        "otags": []
+    },
+    "easy_tomato_soup": {
+        "name": "Easy Tomato Soup",
+        "tags": [
+            "shallot",
+            "vegetarian",
+            "cherry tomato",
+            "red pepper",
+            "tomato",
+            "soup",
+            "broth",
+            "garlic",
+            "easy",
+            "stock",
+            "heavy cream",
+            "basil"
+        ],
+        "otags": []
+    },
+    "kara's_morning_smoothie": {
+        "name": "Kara's Morning Smoothie",
+        "tags": [
+            "vegetarian",
+            "cacao nib",
+            "quick",
+            "spinach",
+            "banana",
+            "smoothie",
+            "date",
+            "milk",
+            "low ingredient",
+            "peanut butter"
+        ],
+        "otags": []
+    },
+    "kashmiri_paneer_curry": {
+        "name": "Kashmiri Paneer Curry",
+        "tags": [
+            "cornstarch",
+            "milk",
+            "indian",
+            "kashmiri chili",
+            "paneer",
+            "bay leaf",
+            "one pot",
+            "zucchini",
+            "yellow curry powder",
+            "cumin",
+            "cloves",
+            "green cardamom",
+            "black cardamom",
+            "fennel",
+            "asafoetida powder",
+            "ginger",
+            "vegetarian",
+            "garlic",
+            "curry",
+            "turmeric",
+            "curry powder",
+            "cardamom"
+        ],
+        "otags": []
+    },
+    "key_lime_tarts": {
+        "name": "Key Lime Tarts",
+        "tags": [
+            "treat",
+            "brown sugar",
+            "greek yogurt",
+            "over an hour",
+            "lime",
+            "sweetened condensed milk",
+            "butter",
+            "biscoff cookies",
+            "lime juice"
+        ],
+        "otags": []
+    },
+    "pancakes": {
+        "name": "Pancakes",
+        "tags": [
+            "treat",
+            "baking powder",
+            "flour",
+            "milk",
+            "vanilla",
+            "egg",
+            "butter"
+        ],
+        "otags": []
+    },
+    "parm_crusted_cod": {
+        "name": "Parmesan Crusted Cod",
+        "tags": [
+            "seafood",
+            "quick",
+            "onion",
+            "cod",
+            "garlic",
+            "red pepper flake",
+            "parmesan",
+            "egg",
+            "paprika",
+            "olive oil"
+        ],
+        "otags": []
+    },
+    "peanutscotch_cookies": {
+        "name": "PeanutScotch Cookies",
+        "tags": [],
+        "otags": []
+    },
+    "pollo_con_arroz": {
+        "name": "Pollo Con Arroz",
+        "tags": [
+            "rice",
+            "ginger",
+            "chili powder",
+            "saffron",
+            "feta",
+            "parsley",
+            "cayenne",
+            "tomato",
+            "spanish",
+            "onion",
+            "garlic",
+            "turmeric",
+            "lime",
+            "cumin",
+            "tomato paste",
+            "paprika",
+            "chicken"
+        ],
+        "otags": []
+    },
+    "straw-pom_smoothie": {
+        "name": "Straw-Pom Smoothie",
+        "tags": [
+            "pomegranate juice",
+            "pomegranate",
+            "vegetarian",
+            "greek yogurt",
+            "quick",
+            "kale",
+            "smoothie",
+            "strawberry",
+            "protein powder",
+            "low ingredient"
+        ],
+        "otags": []
+    },
+    "summer_shepherd's_pie": {
+        "name": "Summer Shepherd's Pie",
+        "tags": [
+            "rosemary",
+            "cornstarch",
+            "oregano",
+            "worcestershire sauce",
+            "zucchini",
+            "corn",
+            "ground beef",
+            "thyme",
+            "sour cream",
+            "onion",
+            "potato",
+            "mushroom",
+            "irish",
+            "saffron",
+            "beef",
+            "garlic",
+            "broth",
+            "tomato paste",
+            "butter"
+        ],
+        "otags": []
+    }
+}

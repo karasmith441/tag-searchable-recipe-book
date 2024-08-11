@@ -22,16 +22,6 @@ h2 {
     margin-top:20px;
 }
 
-.button {
-    font-size:22px;
-    padding: 2px 8px;
-    border: 1px outset buttonborder;
-    border-radius: 3px;
-    color: buttontext;
-    background-color: buttonface;
-    text-decoration: none;
-}
-
 .big-link {
     font-size:27px;
 }

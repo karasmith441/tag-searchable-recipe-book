@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="main.css">
-		<script src="main.js" type="text/javascript" defer></script>
-	</head>
-	<body>
-		<input id="searchbar" type="text" placeholder="enter tags...">
-		<button id="search" onclick="readBase()">Search</button>
-		<button id="clear" onclick="clearSearch()">Clear</button>
-		<button id="help" onclick="window.location.href='help.html';">Help</button>
-		<br>
-		<br>
-		<div id="links">
-		</div>
-	</body>	
+<head>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <img src="assets/Spider Web Left.png" class="topleftweb">
+  <img src="assets/Spider Web Right.png" class="toprightweb">
+  <div class="centered" style="margin-top:50px;">
+    <img src="assets/name.png" style="width:700px"><br>
+  </div>
+  <div class="centered" style="margin-top:15px;">
+    <img src="assets/tagline.png" style="width:500px"><br>
+  </div>
+  <button id="recipe-book" class="accordion" onclick=expandToggle(this)>Recipe Book</button>
+  <div class="panel" style="">
+    <a href="help.html">How to Tag Search</a><br style="margin-top:10px">
+    <a href="recipe-book/recipe_search.html">Recipes</a><br style="margin-top:10px">
+    <a href="cocktail-book/cocktail_search.html">Cocktails</a><br style="margin-top:10px">
+  </div>
+</body>
+<script>
+  acc = document.getElementsByClassName("accordion");
+  for(let i = 0; i < acc.length; i++)
+  {
+    //console.log(acc[i].classList);
+    if(sessionStorage.getItem(acc[i].id) != null && sessionStorage.getItem(acc[i].id) != "")
+    {
+      panel = acc[i].nextElementSibling;
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      acc[i].classList.toggle("active");
+    }
+  }
+  function expandToggle(elem){
+    elem.classList.toggle("active");
+    var panel = elem.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    sessionStorage.setItem(elem.id, panel.style.maxHeight);
+  }
+</script>
 </html>

@@ -1,0 +1,57 @@
+body{
+  background-color: #be832f;
+}
+
+.toprightweb {
+  position:absolute;
+  right:0;
+  top:0;
+  width:200px;
+}
+.topleftweb {
+  position:absolute;
+  left:0;
+  top:0;
+  width:200px;
+}
+
+.centered {
+    display: table;
+    margin: 0 auto;
+}
+
+button.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    display: table;
+    margin: 0 auto;
+    margin-top:25px;
+    font-size:30px;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+/* button.accordion.active, button.accordion:hover {
+} */
+
+button.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

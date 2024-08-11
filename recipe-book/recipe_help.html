@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../main.css">
+  <script>function backHandler(event){if(sessionStorage.getItem("search")!=null){window.location.href="recipe_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}else{window.location.href="recipe_search.html";}}</script>
+	<title>Help</title>
+</head>
+<body>
+	<button id="back" onclick="backHandler()">Back</button>
+	<h1>Help</h1>
+	<p>
+		<a href="index.html?tag=example" class="tags">#example</a> &larr; This is a tag, they appear at the top of recipes.
+	</p>
+	<h2>Ingredients</h2>
+    <ul>
+       	<li><a href="index.html?tag=food" style="color: #2c87f0; text-decoration: none">food</a> &larr; Blue ingredients are also tags, even though they don't have the #.</li>
+    </ul>
+	<h2>Instructions</h2>
+	<ol>
+		<li>The search function on this site works by searching for tags (those words/phrases with the # signs on each recipe) <u>not</u> by the names of the recipes.</li>
+		<li>So, putting &ldquo;bean&rdquo; (note: all tags are singular) into the searchbar will retrive all of the recipes that have beans in them. It will not help you find my <a href="pages/beanless_chili.html">beanless chili recipe</a> as that recipe, by construction, does not have beans, and therefore does not bear the #beans tag.</li>
+		<li>At first this might seem inconvenient, but it does open the doors for some very useful tools. Say you have some zucchini in your fridge that you need to use, and you're craving curry. Well, a quick search for <a href="index.html?tag=zucchini&curry" style="color: #2c87f0; text-decoration: none">&ldquo;zucchini & curry&rdquo;</a> lets you find every recipe I have that has both of those tags, without getting lost in any non-curry zucc recipes or zucc-less curries.</li>
+		<li>Note that you don't have to put a # in your search. You can, but it will just be filtered out.</li>
+		<br>
+		<li>This is called &ldquo;boolean searching&rdquo;. You have three operations: <b>&</b>, <b>|</b>, and <b>!</b>; &ldquo;and&rdquo;, &ldquo;or&rdquo;, and &ldquo;not&rdquo; respectively. (You can also use + for &ldquo;and&rdquo;, / for &ldquo;or&rdquo;, and - for &ldquo;not&rdquo; if you find it easier.)</li>
+		<li>&ldquo;foo & bar&rdquo; will search for recipes that have both #foo and #bar.</li>
+		<li>&ldquo;foo | bar&rdquo; will search for recipes that have either #foo or #bar.</li>
+		<li>&ldquo;!foo&rdquo; will <b>exclude</b> all recipes that have #foo. <b>Note there is no space between the ! and the tag.</b> <i>(this might be fixed in the future, but for now if you put a space it breaks.)</i></li>
+		<br>
+		<li>& and | are done left to right, neither has priority.</li>
+		<li>foo & bar | baz will search for a recipe that has either both #foo and #bar or has #baz.</li>
+		<li>If you want one operation to take precedence, use parentheses to make sure everything's in the right order.</li>
+		<li>&ldquo;foo & (bar | baz)&rdquo; will search for a recipe that has #foo and has either #bar or #baz as well.</li>
+		<br>
+		<li>! only affects the tag it's attached to.</li>
+		<li>&ldquo;!foo | bar" will search for recipes that either <i>does not</i> have #foo or <i>does</i> have #bar.</li>
+		<li>But once again, you can use parentheses.</li>
+		<li>&ldquo;!(foo | bar)&rdquo; will exclude all recipes that have either #foo or #bar.</li>
+		<li>&ldquo;!(foo & bar)&rdquo; will exclude all recipes that have both #foo and #bar, but not necessarily recipes that have one or the other.</li>
+		<br>
+		<li>Fun fact: !(a & b) = !a | !b and !(a | b) = !a & !b. These are called <a href="https://en.wikipedia.org/wiki/De_Morgan%27s_laws"> De Morgan's Laws.</a></li>
+		<li>Fun Fact 2: & and | distribute over each other like multiplication distributes over addition. a & (b | c) = (a & b) | (a & c). a | (b & c) = (a | b) & (a | c). This one doesn't have a fancy name though, which is why it's fun fact number 2 instead of number 1.</li>
+	</ol>
+</body>
+</html>

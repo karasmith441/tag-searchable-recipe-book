@@ -2,23 +2,24 @@
 <html>
 <head>
 	<link rel="stylesheet" href="main.css">
+  <script>function homeHandler(event){window.location.href="index.html";}</script>
 	<title>Help</title>
 </head>
 <body>
-	<a href="index.html" class=button>Back</a>
-	<h1>Help</h1>
+	<button id="back" onclick="homeHandler()">Home</button>
+	<h1>Recipe</h1>
 	<p>
-		<a href="index.html?tag=example" class="tags">#example</a> &larr; This is a tag, they appear at the top of recipes.
+		<a href="recipe-book/recipe_search.html?tag=example" class="tags">#example</a> &larr; This is a tag, they appear at the top of recipes.
 	</p>
 	<h2>Ingredients</h2>
     <ul>
-       	<li><a href="index.html?tag=food" style="color: #2c87f0; text-decoration: none">food</a> &larr; Blue ingredients are also tags, even though they don't have the #.</li>
+       	<li><a href="recipe-book/recipe_search.html?tag=food" style="color: #2c87f0; text-decoration: none">food</a> &larr; Blue ingredients are also tags, even though they don't have the #.</li>
     </ul>
 	<h2>Instructions</h2>
 	<ol>
 		<li>The search function on this site works by searching for tags (those words/phrases with the # signs on each recipe) <u>not</u> by the names of the recipes.</li>
-		<li>So, putting &ldquo;bean&rdquo; (note: all tags are singular) into the searchbar will retrive all of the recipes that have beans in them. It will not help you find my <a href="pages/beanless_chili.html">beanless chili recipe</a> as that recipe, by construction, does not have beans, and therefore does not bear the #beans tag.</li>
-		<li>At first this might seem inconvenient, but it does open the doors for some very useful tools. Say you have some zucchini in your fridge that you need to use, and you're craving curry. Well, a quick search for <a href="index.html?tag=zucchini&curry" style="color: #2c87f0; text-decoration: none">&ldquo;zucchini & curry&rdquo;</a> lets you find every recipe I have that has both of those tags, without getting lost in any non-curry zucc recipes or zucc-less curries.</li>
+		<li>So, putting &ldquo;bean&rdquo; (note: all tags are singular) into the searchbar will retrive all of the recipes that have beans in them. It will not help you find my <a href="recipe-book/pages/beanless_chili.html">beanless chili recipe</a> as that recipe, by construction, does not have beans, and therefore does not bear the #beans tag.</li>
+		<li>At first this might seem inconvenient, but it does open the doors for some very useful tools. Say you have some zucchini in your fridge that you need to use, and you're craving curry. Well, a quick search for <a href="recipe-book/recipe_search.html?tag=zucchini+curry" style="color: #2c87f0; text-decoration: none">&ldquo;zucchini & curry&rdquo;</a> lets you find every recipe I have that has both of those tags, without getting lost in any non-curry zucc recipes or zucc-less curries.</li>
 		<li>Note that you don't have to put a # in your search. You can, but it will just be filtered out.</li>
 		<br>
 		<li>This is called &ldquo;boolean searching&rdquo;. You have three operations: <b>&</b>, <b>|</b>, and <b>!</b>; &ldquo;and&rdquo;, &ldquo;or&rdquo;, and &ldquo;not&rdquo; respectively. (You can also use + for &ldquo;and&rdquo;, / for &ldquo;or&rdquo;, and - for &ldquo;not&rdquo; if you find it easier.)</li>
