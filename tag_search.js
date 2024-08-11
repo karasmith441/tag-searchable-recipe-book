@@ -43,7 +43,7 @@ function evalSearchbar(tags, otags, search)
 		let c = search[i];
 		if(c == "(")
 		{
-			let recursive_bool = evalSearchbar(tags, search.slice(i+1));
+			let recursive_bool = evalSearchbar(tags, otags, search.slice(i+1));
 			if(tag.trim() == "!")
 			{
 				recursive_bool = !recursive_bool;
