@@ -1,7 +1,21 @@
 {
+    "boulevardier": {
+        "name": "Boulevardier",
+        "tags": [
+            "whiskey",
+            "vermouth",
+            "bourbon",
+            "sweet vermouth",
+            "campari"
+        ],
+        "otags": []
+    },
     "dark_and_stormy": {
         "name": "Dark and Stormy",
         "tags": [
+            "spiced rum",
+            "ginger beer",
+            "lime juice",
             "rum"
         ],
         "otags": []
