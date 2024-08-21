@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../main.css">
+    <script>function backHandler(event){window.location.href="../cocktail_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+    <title>Vieux Carr'e</title>
+  </head>
+  <body>
+    <button id="back" onclick="backHandler()">Back</button>
+    <h1>Vieux Carr'e</h1>
+    <p>
+      <a href="../cocktail_search.html?tag=cognac" class="tags">#cognac</a>
+      <a href="../cocktail_search.html?tag=rye" class="tags">#rye</a>
+      <a href="../cocktail_search.html?tag=whiskey" class="tags">#whiskey</a>
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>3/4 oz <a href="../cocktail_search.html?tag=rye" style="color: #2c87f0; text-decoration: none">Rye</a></li>
+      <li>3/4 oz <a href="../cocktail_search.html?tag=cognac" style="color: #2c87f0; text-decoration: none">Cognac</a></li>
+      <li>3/4 oz <a href="../cocktail_search.html?tag=sweet vermouth" style="color: #2c87f0; text-decoration: none">Sweet Vermouth</a></li>
+      <li>1 Barspoon <a href="../cocktail_search.html?tag=amaro" style="color: #2c87f0; text-decoration: none">Amaro</a></li>
+      <li>1 Barspoon <a href="../cocktail_search.html?tag=marischino liquer" style="color: #2c87f0; text-decoration: none">Marischino Liquer</a></li>
+      <li>2 Dashes <a href="../cocktail_search.html?tag=angostura bitter" style="color: #2c87f0; text-decoration: none">Angostura Bitters</a></li>
+      <li>2 Dashes <a href="../cocktail_search.html?tag=orange bitter" style="color: #2c87f0; text-decoration: none">Orange Bitters</a></li>
+    </ul>
+    <h3>Preparation</h3>
+    <p class="Big-P" style="margin-top: -5px; margin-left: 15px">
+      Stirred over ice.<br>
+    </p>
+  </body>
+</html>

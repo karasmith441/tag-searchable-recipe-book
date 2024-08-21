@@ -1,4 +1,23 @@
 {
+    "adobo_sauce": {
+        "name": "Adobo Sauce",
+        "tags": [
+            "guajillo pepper",
+            "onion",
+            "mexican",
+            "cumin",
+            "spicy",
+            "sugar",
+            "garlic",
+            "oregano",
+            "cinnamon",
+            "vegetarian",
+            "olive oil",
+            "sauce",
+            "ancho pepper"
+        ],
+        "otags": []
+    },
     "aloo_gobi": {
         "name": "Aloo Gobi",
         "tags": [
@@ -372,6 +391,27 @@
         ],
         "otags": []
     },
+    "easy_chocolate_chip_cookies": {
+        "name": "Easy Chocolate Chip Cookies",
+        "tags": [
+            "brown sugar",
+            "salt",
+            "sugar",
+            "vanilla extract",
+            "baking soda",
+            "egg",
+            "cookie",
+            "quick",
+            "baking powder",
+            "chocolate chip",
+            "butter",
+            "treat",
+            "granulated sugar",
+            "easy",
+            "flour"
+        ],
+        "otags": []
+    },
     "easy_fritters": {
         "name": "Easy Fritters",
         "tags": [
@@ -400,6 +440,46 @@
             "stock",
             "heavy cream",
             "basil"
+        ],
+        "otags": []
+    },
+    "garam_masala": {
+        "name": "Garam Masala",
+        "tags": [
+            "curry powder",
+            "indian",
+            "nutmeg",
+            "red curry powder",
+            "cardamon",
+            "white pepper",
+            "cinnamon",
+            "cayenne",
+            "spice blend",
+            "cumin",
+            "garam masala",
+            "cloves"
+        ],
+        "otags": []
+    },
+    "haddock_and_chickpeas": {
+        "name": "Haddock and Chickpeas",
+        "tags": [
+            "haddock filet",
+            "lemon",
+            "garlic",
+            "white wine",
+            "olive oil",
+            "chickpea",
+            "fish",
+            "lemon juice",
+            "garlic powder",
+            "butter",
+            "seafood",
+            "paprika",
+            "haddock",
+            "shallot",
+            "pescetarian",
+            "parsley"
         ],
         "otags": []
     },
@@ -493,7 +573,37 @@
     },
     "peanutscotch_cookies": {
         "name": "PeanutScotch Cookies",
-        "tags": [],
+        "tags": [
+            "brown sugar",
+            "scotch",
+            "sugar",
+            "baking soda",
+            "finishing sugar",
+            "egg",
+            "cookie",
+            "heavy cream",
+            "peanutbutter",
+            "butter",
+            "treat",
+            "granulated sugar",
+            "flour",
+            "butterscotch",
+            "vanilla"
+        ],
+        "otags": []
+    },
+    "pesto-walnut_chicken": {
+        "name": "Pesto-Walnut Chicken",
+        "tags": [
+            "chicken breast",
+            "pasta",
+            "ginger",
+            "pesto",
+            "chicken",
+            "spaghetti",
+            "paprika",
+            "walnut"
+        ],
         "otags": []
     },
     "pollo_con_arroz": {
@@ -516,6 +626,67 @@
             "tomato paste",
             "paprika",
             "chicken"
+        ],
+        "otags": []
+    },
+    "red_wine_tomato_sauce": {
+        "name": "Red Wine Tomato Sauce",
+        "tags": [
+            "thyme",
+            "tomato",
+            "oregano",
+            "red sauce",
+            "sauce",
+            "fresh rosemary",
+            "basil",
+            "vegetarian",
+            "wine",
+            "onion",
+            "fresh thyme",
+            "butter",
+            "fresh oregano",
+            "red wine",
+            "garlic",
+            "pasta sauce",
+            "fresh basil",
+            "rosemary",
+            "italian"
+        ],
+        "otags": []
+    },
+    "soffrito": {
+        "name": "Soffrito Spice Blend",
+        "tags": [
+            "tomato",
+            "parsley",
+            "onion",
+            "mediterranean",
+            "soffrito",
+            "rosemary",
+            "garlic powder",
+            "red pepper flake",
+            "sundried tomato",
+            "garlic",
+            "sage",
+            "spice blend"
+        ],
+        "otags": []
+    },
+    "soffrito_spice_blend": {
+        "name": "Soffrito Spice Blend",
+        "tags": [
+            "rosemary",
+            "sage",
+            "garlic",
+            "tomato",
+            "parsley",
+            "spice blend",
+            "garlic powder",
+            "sundried tomato",
+            "mediterranean",
+            "red pepper flake",
+            "soffrito",
+            "onion"
         ],
         "otags": []
     },

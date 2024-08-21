@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../../main.css">
+    <script>function backHandler(event){window.location.href="../cocktail_search.html?tag="+sessionStorage.getItem("search").replace(/\//g, "|").replace(/&/g, "+");}</script>
+    <title>Negroni</title>
+  </head>
+  <body>
+    <button id="back" onclick="backHandler()">Back</button>
+    <h1>Negroni</h1>
+    <p>
+      <a href="../cocktail_search.html?tag=gin" class="tags">#gin</a>
+    </p>
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 oz. <a href="../cocktail_search.html?tag=gin" style="color: #2c87f0; text-decoration: none">Gin</a></li>
+      <li>1 oz. <a href="../cocktail_search.html?tag=sweet vermouth" style="color: #2c87f0; text-decoration: none">Sweet Vermouth</a></li>
+      <li>1 oz. <a href="../cocktail_search.html?tag=campari" style="color: #2c87f0; text-decoration: none">Campari</a></li>
+    </ul>
+    <h3>Preparation</h3>
+    <p class="Big-P" style="margin-top: -5px; margin-left: 15px">
+      stirred over ice<br>
+    </p>
+  </body>
+</html>

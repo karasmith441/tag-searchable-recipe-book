@@ -13,6 +13,9 @@ defcon = 0
 with open("doctype_mapper.json") as doc_file:
     DOC_MAP = json.load(doc_file)
 RECIPE_FILES = glob.glob("recipes/*.rp")
+TAG_GROUPS = {
+    "#fizzy": ["fizzy", "carbonated", "sparkling"]
+}
 
 # __MAIN__
 def main(argc, argv):
@@ -42,7 +45,7 @@ SYNTAX_ERROR = {
     NULL_TYPE: lambda path: throw_err(f"[SYNTAX ERROR] Recipe \"{path}\" has empty <!DOCTYPE [id]> statement"),
     TITLE_SUBHEADER: lambda path: throw_err(f"[SYNTAX ERROR] In Recipe \"{path}\": <title> block may not have subheaders. To add a subtitle, put it below the title in the <title> block"),
     TAG_SUBHEADER: lambda path: throw_err(f"[SYNTAX ERROR] In Recipe \"{path}\": tag blocks may not have subheaders"),
-    MULTI_SECT: lambda path, block: throw_err(f"[SYNTAX ERROR] Recipe \"{path}\" has multipe \"{block}\" blocks that are indistinguishable. Please add/change subheaders."),
+    MULTI_SECT: lambda path, block: throw_err(f"[SYNTAX ERROR] Recipe \"{path}\" has multipe \"{block}\" blocks that are indistinguishable. Please remove extra blocks or add/change subheaders."),
     MISSING_TITLE: lambda path: throw_err(f"[SYNTAX ERROR] Recipe \"{path}\" missing <title> block")
 }
 
@@ -208,8 +211,21 @@ def parse_rp(ID, text):
         elif header in ['tags', 'itags', 'otags']:
             if subheader != "DEFAULT":
                 return SYNTAX_ERROR[TAG_SUBHEADER](path)
+            if header in rp:
+                return SYNTAX_ERROR[MULTI_SECT](path, header)
 
-            rp[header] = sorted([t.strip().lower() for t in body.split("\n") if t.strip() != ""])
+            rp[header] = []
+            for line in body.split("\n"):
+                t = line.strip().lower()
+                if t == "":
+                    continue
+                elif t[0] != "#":
+                    rp[header].append(t)
+                else:
+                    rp[header] += TAG_GROUPS[t]
+
+            rp[header] = sorted(rp[header])
+
 
         else:
             if header not in rp:

@@ -1,4 +1,18 @@
 {
+    "angostormy": {
+        "name": "Angostormy",
+        "tags": [
+            "angostura bitter",
+            "carbonated",
+            "spiced rum",
+            "rum",
+            "fizzy",
+            "sparkling",
+            "pumpkin spice syrup",
+            "ginger beer"
+        ],
+        "otags": []
+    },
     "boulevardier": {
         "name": "Boulevardier",
         "tags": [
@@ -10,13 +24,68 @@
         ],
         "otags": []
     },
+    "burly_buzzard": {
+        "name": "Burly Buzzard",
+        "tags": [
+            "maraschino liqueur",
+            "rum",
+            "spiced rum",
+            "black rum",
+            "dry vermouth",
+            "vermouth",
+            "aperol"
+        ],
+        "otags": []
+    },
+    "comfortable_sunshine": {
+        "name": "Comfortable Sunshine",
+        "tags": [
+            "grenadine",
+            "rum",
+            "triple sec",
+            "white rum",
+            "angostura bitter"
+        ],
+        "otags": []
+    },
+    "cough_syrup": {
+        "name": "Cough Syrup",
+        "tags": [
+            "amaretto",
+            "campari",
+            "gin"
+        ],
+        "otags": []
+    },
     "dark_and_stormy": {
         "name": "Dark and Stormy",
         "tags": [
-            "spiced rum",
-            "ginger beer",
             "lime juice",
-            "rum"
+            "carbonated",
+            "spiced rum",
+            "rum",
+            "fizzy",
+            "sparkling",
+            "ginger beer"
+        ],
+        "otags": []
+    },
+    "gay_pirate": {
+        "name": "Gay Pirate",
+        "tags": [
+            "cherry",
+            "club soda",
+            "lime juice",
+            "carbonated",
+            "spiced rum",
+            "shaken",
+            "lime",
+            "rum",
+            "fizzy",
+            "sparkling",
+            "blackberry",
+            "blackberry syrup",
+            "cherry syrup"
         ],
         "otags": []
     },
@@ -33,11 +102,53 @@
         ],
         "otags": []
     },
+    "moscow_mule": {
+        "name": "Moscow Mule",
+        "tags": [
+            "lime juice",
+            "carbonated",
+            "shaken",
+            "lime",
+            "fizzy",
+            "sparkling",
+            "vodka",
+            "ginger beer"
+        ],
+        "otags": []
+    },
+    "negroni": {
+        "name": "Negroni",
+        "tags": [
+            "sweet vermouth",
+            "vermouth",
+            "campari",
+            "gin"
+        ],
+        "otags": []
+    },
     "old_fashioned": {
         "name": "Old Fashioned",
         "tags": [
-            "bourbon",
-            "whiskey"
+            "whiskey",
+            "orange peel",
+            "angostura bitter",
+            "simple syrup",
+            "bourbon"
+        ],
+        "otags": []
+    },
+    "vieux_carr'e": {
+        "name": "Vieux Carr'e",
+        "tags": [
+            "amaro",
+            "marischino liquer",
+            "vermouth",
+            "angostura bitter",
+            "sweet vermouth",
+            "whiskey",
+            "cognac",
+            "rye",
+            "orange bitter"
         ],
         "otags": []
     },
@@ -47,6 +158,16 @@
             "milk",
             "kahlua",
             "vodka"
+        ],
+        "otags": []
+    },
+    "witch's_familiar": {
+        "name": "Witch's Familiar",
+        "tags": [
+            "pumpkin spice syrup",
+            "angostura bitter",
+            "lime juice",
+            "bourbon"
         ],
         "otags": []
     }
